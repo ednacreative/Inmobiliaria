@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa de viviendas en Madrid · Inmobiliaria Sanz</title>
+  <meta name="description" content="Explora todas las viviendas en venta y alquiler de Inmobiliaria Sanz sobre el mapa de Madrid. Filtra por operación, zona, tipo y precio.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-cabecera></header>
+
+  <main>
+    <div class="mapa-layout">
+      <aside class="mapa-layout__lista">
+        <form id="mapa-filtros" style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-bottom:1rem">
+          <div class="campo">
+            <label for="m-op">Operación</label>
+            <select id="m-op" name="operacion">
+              <option value="">Todas</option>
+              <option value="venta">Comprar</option>
+              <option value="alquiler">Alquilar</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="m-tipo">Tipo</label>
+            <select id="m-tipo" name="tipo">
+              <option value="">Cualquiera</option>
+              <option value="piso">Piso</option>
+              <option value="ático">Ático</option>
+              <option value="dúplex">Dúplex</option>
+              <option value="casa">Casa</option>
+              <option value="estudio">Estudio</option>
+              <option value="loft">Loft</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="m-barrio">Zona</label>
+            <select id="m-barrio" name="barrio"><option value="">Toda la ciudad</option></select>
+          </div>
+          <div class="campo">
+            <label for="m-hab">Hab. mín.</label>
+            <select id="m-hab" name="habitaciones">
+              <option value="">—</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select>
+          </div>
+          <div class="campo" style="grid-column:1 / -1">
+            <label for="m-pmax">Precio máximo (€)</label>
+            <input id="m-pmax" name="precioMax" type="number" min="0" step="50" placeholder="Sin límite">
+          </div>
+          <button class="btn btn--linea" type="button" id="mapa-limpiar" style="grid-column:1 / -1">Limpiar filtros</button>
+        </form>
+        <p class="listado__conteo" id="mapa-conteo" style="margin-bottom:1rem">Cargando…</p>
+        <div id="mapa-lista"></div>
+      </aside>
+      <div class="mapa-layout__mapa">
+        <div id="mapa-full"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer data-pie></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="data/propiedades.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/mapa.js"></script>
+</body>
+</html>

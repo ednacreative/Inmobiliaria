@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viviendas en alquiler en Madrid · Inmobiliaria Sanz</title>
+  <meta name="description" content="Pisos y casas en alquiler en Madrid. Filtra por zona, precio, habitaciones y metros. Contratos de larga duración con trato cercano.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-operacion="alquiler">
+  <header data-cabecera></header>
+
+  <div class="encabezado-pagina">
+    <div class="contenedor">
+      <h1>Viviendas en alquiler</h1>
+      <p>Alquila en Madrid sin sorpresas: renta mensual, gastos de comunidad, mobiliario y ubicación exacta en el mapa. Contratos de larga duración.</p>
+    </div>
+  </div>
+
+  <main class="seccion">
+    <div class="contenedor" id="listado">
+      <div class="listado">
+        <!-- Filtros -->
+        <aside class="filtros" id="filtros">
+          <h3>Filtrar resultados</h3>
+          <form id="filtros-form">
+            <div class="campo">
+              <label for="f-texto">Buscar</label>
+              <input id="f-texto" name="texto" type="search" placeholder="Zona, calle, referencia…">
+            </div>
+            <div class="campo">
+              <label for="f-tipo">Tipo de vivienda</label>
+              <select id="f-tipo" name="tipo"><option value="">Cualquiera</option></select>
+            </div>
+            <div class="campo">
+              <label for="f-barrio">Zona</label>
+              <select id="f-barrio" name="barrio"><option value="">Toda la ciudad</option></select>
+            </div>
+            <div class="campo">
+              <label for="f-hab">Habitaciones (mín.)</label>
+              <select id="f-hab" name="habitaciones">
+                <option value="">Indiferente</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="f-pmin">Precio mínimo (€)</label>
+              <input id="f-pmin" name="precioMin" type="number" min="0" step="50" placeholder="0">
+            </div>
+            <div class="campo">
+              <label for="f-pmax">Precio máximo (€)</label>
+              <input id="f-pmax" name="precioMax" type="number" min="0" step="50" placeholder="Sin límite">
+            </div>
+            <div class="campo">
+              <label for="f-m2">Superficie mínima (m²)</label>
+              <input id="f-m2" name="m2Min" type="number" min="0" step="5" placeholder="0">
+            </div>
+            <div class="filtros__acciones">
+              <button class="btn btn--primario btn--bloque" type="submit">Aplicar</button>
+              <button class="btn btn--linea" type="button" id="btn-limpiar">Limpiar</button>
+            </div>
+          </form>
+        </aside>
+
+        <!-- Resultados -->
+        <div>
+          <div class="listado__barra">
+            <button class="btn btn--linea filtros-toggle" id="filtros-toggle" type="button">Filtros</button>
+            <span class="listado__conteo" id="resultados-conteo">Cargando…</span>
+            <label class="campo" style="flex-direction:row;align-items:center;gap:.5rem">
+              <span style="text-transform:none;letter-spacing:0">Ordenar:</span>
+              <select id="orden">
+                <option value="recientes">Más recientes</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="m2-desc">Más metros</option>
+              </select>
+            </label>
+          </div>
+          <div class="rejilla" id="resultados-grid">
+            <div class="cargando">Cargando propiedades…</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer data-pie></footer>
+
+  <script src="data/propiedades.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/listado.js"></script>
+</body>
+</html>

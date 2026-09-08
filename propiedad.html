@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de vivienda · Inmobiliaria Sanz</title>
+  <meta name="description" content="Detalle de la vivienda: precio, superficie, distribución, equipamiento y ubicación en el mapa. Solicita visita con Inmobiliaria Sanz.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Visor de imágenes a pantalla completa */
+    .visor {
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 16, 24, 0.92);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 2rem;
+      cursor: zoom-out;
+    }
+    .visor.abierto { display: flex; }
+    .visor img { max-width: 92vw; max-height: 90vh; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <header data-cabecera></header>
+
+  <main>
+    <article id="ficha">
+      <div class="contenedor cargando">Cargando ficha…</div>
+    </article>
+  </main>
+
+  <div class="visor" id="visor"><img src="" alt="Imagen ampliada de la vivienda"></div>
+
+  <footer data-pie></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="data/propiedades.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/propiedad.js"></script>
+</body>
+</html>

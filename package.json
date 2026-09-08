@@ -1,0 +1,13 @@
+{
+  "name": "inmobiliaria-sanz",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web de inmobiliaria: catálogo de viviendas en venta y alquiler, buscador, mapa y fichas de detalle. Sitio estático sin framework.",
+  "scripts": {
+    "dev": "npx --yes serve@14 -l 3000 .",
+    "start": "npx --yes serve@14 -l 3000 .",
+    "datos": "node scripts/generar-datos.mjs"
+  },
+  "keywords": ["inmobiliaria", "real-estate", "leaflet", "sitio-estatico"],
+  "license": "UNLICENSED"
+}

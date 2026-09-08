@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inmobiliaria Sanz · Compra, venta y alquiler de viviendas en Madrid</title>
+  <meta name="description" content="Inmobiliaria Sanz: viviendas en venta y alquiler en Madrid. Busca por zona, precio y características, consulta el mapa y solicita visita.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-cabecera></header>
+
+  <main>
+    <!-- Hero + buscador -->
+    <section class="hero">
+      <div class="contenedor hero__inner">
+        <span class="antetitulo" style="color:var(--oro-500)">Inmobiliaria en Madrid</span>
+        <h1>Encuentra tu próxima casa sin vueltas</h1>
+        <p>Viviendas en venta y alquiler con información clara: metros reales, distribución, gastos y ubicación en el mapa.</p>
+      </div>
+      <div class="contenedor">
+        <form class="buscador" id="buscador-home" style="margin-bottom:-2.5rem">
+          <div class="campo">
+            <label for="b-operacion">Operación</label>
+            <select id="b-operacion" name="operacion">
+              <option value="venta">Comprar</option>
+              <option value="alquiler">Alquilar</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="b-tipo">Tipo</label>
+            <select id="b-tipo" name="tipo">
+              <option value="">Cualquiera</option>
+              <option value="piso">Piso</option>
+              <option value="ático">Ático</option>
+              <option value="dúplex">Dúplex</option>
+              <option value="casa">Casa</option>
+              <option value="estudio">Estudio</option>
+              <option value="loft">Loft</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="b-barrio">Zona</label>
+            <select id="b-barrio" name="barrio">
+              <option value="">Toda la ciudad</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="b-precio">Precio máx.</label>
+            <select id="b-precio" name="precioMax">
+              <option value="">Sin límite</option>
+              <option value="800">Hasta 800 €</option>
+              <option value="1200">Hasta 1.200 €</option>
+              <option value="1800">Hasta 1.800 €</option>
+              <option value="150000">Hasta 150.000 €</option>
+              <option value="300000">Hasta 300.000 €</option>
+              <option value="500000">Hasta 500.000 €</option>
+              <option value="800000">Hasta 800.000 €</option>
+            </select>
+          </div>
+          <button class="btn btn--primario" type="submit">Buscar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Destacados -->
+    <section class="seccion" id="destacados" style="padding-top:6rem">
+      <div class="contenedor">
+        <div class="seccion__cabecera">
+          <span class="antetitulo">Selección de la semana</span>
+          <h2>Viviendas destacadas</h2>
+          <p class="texto-apoyo">Una muestra de lo que tenemos disponible ahora mismo. Actualizamos el catálogo cada semana.</p>
+        </div>
+        <div class="rejilla" id="destacados-grid">
+          <div class="cargando">Cargando propiedades…</div>
+        </div>
+        <div class="centro mt-2">
+          <a class="btn btn--linea" href="venta.html">Ver todo en venta</a>
+          <a class="btn btn--linea" href="alquiler.html">Ver todo en alquiler</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo trabajamos -->
+    <section class="seccion seccion--gris">
+      <div class="contenedor">
+        <div class="seccion__cabecera seccion__cabecera--centro">
+          <span class="antetitulo">Cómo trabajamos</span>
+          <h2>Un proceso claro de principio a fin</h2>
+        </div>
+        <div class="pasos">
+          <div class="paso"><h3>Te escuchamos</h3><p>Analizamos qué necesitas, tu presupuesto y tus plazos. Sin compromiso.</p></div>
+          <div class="paso"><h3>Seleccionamos</h3><p>Te enseñamos solo viviendas que encajan. Nada de perder tardes en visitas inútiles.</p></div>
+          <div class="paso"><h3>Negociamos</h3><p>Te acompañamos en la oferta y cerramos el mejor precio y condiciones posibles.</p></div>
+          <div class="paso"><h3>Firmamos</h3><p>Gestionamos arras, notaría, tasación e impuestos. Tú solo firmas.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa CTA -->
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="cta-franja">
+          <span class="antetitulo" style="color:var(--oro-500)">Búsqueda por mapa</span>
+          <h2>Mira dónde está cada vivienda</h2>
+          <p>Explora todo el catálogo sobre el mapa de Madrid, filtra por zona y precio y abre la ficha con un clic.</p>
+          <div class="mt-2"><a class="btn btn--primario" href="mapa.html">Abrir el mapa</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Novedades -->
+    <section class="seccion seccion--gris">
+      <div class="contenedor">
+        <div class="seccion__cabecera">
+          <span class="antetitulo">Recién publicadas</span>
+          <h2>Últimas incorporaciones</h2>
+        </div>
+        <div class="rejilla" id="recientes-grid"></div>
+      </div>
+    </section>
+
+    <!-- Confianza -->
+    <section class="seccion seccion--oscura">
+      <div class="contenedor">
+        <div class="cifras">
+          <div class="cifra"><strong>25+</strong><span>años en el barrio</span></div>
+          <div class="cifra"><strong>1.400</strong><span>operaciones cerradas</span></div>
+          <div class="cifra"><strong>32</strong><span>viviendas disponibles</span></div>
+          <div class="cifra"><strong>4,8/5</strong><span>valoración de clientes</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vender -->
+    <section class="seccion">
+      <div class="contenedor" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center">
+        <img src="https://picsum.photos/seed/sanz-vender/800/600" alt="Asesor inmobiliario con un cliente" style="border-radius:var(--radio)" width="800" height="600" loading="lazy">
+        <div>
+          <span class="antetitulo">¿Quieres vender o alquilar?</span>
+          <h2>Valoramos tu inmueble gratis</h2>
+          <p>Estudiamos el mercado de tu zona, preparamos fotos y anuncio profesional y filtramos a los interesados para que solo veas gente seria.</p>
+          <a class="btn btn--primario" href="contacto.html">Solicitar valoración</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-pie></footer>
+
+  <script src="data/propiedades.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

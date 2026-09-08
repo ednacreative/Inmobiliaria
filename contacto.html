@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Inmobiliaria Sanz</title>
+  <meta name="description" content="Contacta con Inmobiliaria Sanz en Madrid. Solicita una valoración gratuita de tu vivienda o pide información sobre cualquier propiedad.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-cabecera></header>
+
+  <div class="encabezado-pagina">
+    <div class="contenedor">
+      <h1>Contacto</h1>
+      <p>Escríbenos o pásate por la oficina. Te respondemos el mismo día laborable.</p>
+    </div>
+  </div>
+
+  <main class="seccion">
+    <div class="contenedor" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start">
+      <div>
+        <span class="antetitulo">Cuéntanos</span>
+        <h2>¿En qué te ayudamos?</h2>
+        <form id="form-contacto">
+          <div class="form-campo"><label for="g-nombre">Nombre y apellidos</label><input id="g-nombre" name="nombre" required></div>
+          <div class="form-campo"><label for="g-email">Email</label><input id="g-email" name="email" type="email" required></div>
+          <div class="form-campo"><label for="g-tel">Teléfono</label><input id="g-tel" name="telefono" type="tel"></div>
+          <div class="form-campo">
+            <label for="g-motivo">Motivo</label>
+            <select id="g-motivo" name="motivo">
+              <option value="comprar">Quiero comprar</option>
+              <option value="alquilar">Quiero alquilar</option>
+              <option value="vender">Quiero vender mi vivienda</option>
+              <option value="poner-alquiler">Quiero poner mi vivienda en alquiler</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-campo"><label for="g-msg">Mensaje</label><textarea id="g-msg" name="mensaje" required></textarea></div>
+          <label style="display:flex;gap:.5rem;font-size:.85rem;color:var(--gris-700);margin-bottom:1rem">
+            <input type="checkbox" required> He leído y acepto la política de privacidad.
+          </label>
+          <button class="btn btn--primario btn--bloque" type="submit">Enviar mensaje</button>
+        </form>
+        <div id="contacto-ok" class="aviso-form oculto"><strong>¡Mensaje enviado!</strong><br>Gracias por escribirnos. Te contactamos en breve.</div>
+      </div>
+
+      <div>
+        <span class="antetitulo">Oficina</span>
+        <h2>Dónde estamos</h2>
+        <p>
+          Calle de Serrano, 120<br>
+          28006 Madrid<br><br>
+          <strong>Teléfono:</strong> <a href="tel:+34910000000">910 000 000</a><br>
+          <strong>Email:</strong> <a href="mailto:hola@inmobiliariasanz.es">hola@inmobiliariasanz.es</a><br><br>
+          <strong>Horario:</strong><br>
+          Lunes a viernes: 9:30–20:00<br>
+          Sábados: 10:00–14:00<br>
+          Domingos: cerrado
+        </p>
+        <div id="mapa-oficina" class="mini-mapa" style="margin-top:1rem"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer data-pie></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="data/propiedades.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script>
+    (function () {
+      var f = document.getElementById("form-contacto");
+      var ok = document.getElementById("contacto-ok");
+      if (f) {
+        f.addEventListener("submit", function (e) {
+          e.preventDefault();
+          f.classList.add("oculto");
+          ok.classList.remove("oculto");
+          window.scrollTo({ top: ok.getBoundingClientRect().top + window.scrollY - 120, behavior: "smooth" });
+        });
+      }
+      if (typeof L !== "undefined") {
+        var el = document.getElementById("mapa-oficina");
+        if (el) {
+          var m = L.map(el, { scrollWheelZoom: false }).setView([40.4321, -3.6866], 15);
+          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution: "&copy; OpenStreetMap", maxZoom: 19
+          }).addTo(m);
+          L.marker([40.4321, -3.6866]).addTo(m).bindPopup("Inmobiliaria Sanz<br>Calle de Serrano, 120");
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
