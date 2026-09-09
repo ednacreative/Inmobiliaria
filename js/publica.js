@@ -101,7 +101,6 @@
 
       window.InmoForms.enviar(datos, {
         asunto: "🏠 Nuevo inmueble para revisar: " + titular,
-        plantilla: "table",
         replyTo: f.elements.contacto_email.value,
         autorespuesta:
           "Hola " +
