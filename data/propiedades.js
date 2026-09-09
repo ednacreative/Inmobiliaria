@@ -1,14 +1,14 @@
 /* Generado por scripts/generar-datos.mjs — no editar a mano. */
 window.INMO_DB = {
-  "generado": "2026-09-08T23:31:45.846Z",
+  "generado": "2026-09-09T00:04:27.081Z",
   "fuente": "datos ficticios — generar-datos.mjs",
   "agencia": {
     "nombre": "Inmobiliaria Sanz",
-    "ciudad": "Madrid",
+    "ciudad": "Zaragoza",
     "centro_mapa": {
-      "lat": 40.4238,
-      "lng": -3.6905,
-      "zoom": 12
+      "lat": 41.6488,
+      "lng": -0.8891,
+      "zoom": 13
     }
   },
   "total": 32,
@@ -20,17 +20,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "reservado",
       "destacado": true,
-      "precio": 659000,
-      "precio_texto": "659.000 €",
-      "titulo": "Piso de diseño con acabados de calidad en Chamberí",
+      "precio": 615000,
+      "precio_texto": "615.000 €",
+      "titulo": "Piso de diseño con acabados de calidad en Universidad",
       "ubicacion": {
-        "direccion": "Calle de Bravo Murillo, 138",
-        "barrio": "Chamberí",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28010",
-        "lat": 40.439108,
-        "lng": -3.706577
+        "direccion": "Paseo de Sagasta, 138",
+        "barrio": "Universidad",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50009",
+        "lat": 41.639108,
+        "lng": -0.899777
       },
       "caracteristicas": {
         "m2_construidos": 84,
@@ -65,15 +65,15 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Piso de 84 m² construidos (70 m² útiles) situado en Calle de Bravo Murillo, 138, en el distrito de Chamberí. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 10 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Piso de 84 m² construidos (70 m² útiles) situado en Paseo de Sagasta, 138, en el distrito de Universidad. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 10 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0013-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0013-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0013-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0013-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0013-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=31090",
+        "https://loremflickr.com/1200/800/living-room?lock=53471",
+        "https://loremflickr.com/1200/800/kitchen?lock=75852",
+        "https://loremflickr.com/1200/800/bedroom?lock=98233",
+        "https://loremflickr.com/1200/800/bathroom?lock=20614"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0013-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=31090",
       "fecha_publicacion": "2026-09-15"
     },
     {
@@ -83,17 +83,17 @@ window.INMO_DB = {
       "tipo": "loft",
       "estado_publicacion": "alquilado",
       "destacado": true,
-      "precio": 2050,
-      "precio_texto": "2050 €/mes",
-      "titulo": "Loft luminoso con terraza en Hortaleza",
+      "precio": 1600,
+      "precio_texto": "1600 €/mes",
+      "titulo": "Loft luminoso con terraza en Santa Isabel",
       "ubicacion": {
-        "direccion": "Calle de Goya, 134",
-        "barrio": "Hortaleza",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28043",
-        "lat": 40.473981,
-        "lng": -3.64131
+        "direccion": "Calle de León XIII, 134",
+        "barrio": "Santa Isabel",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50016",
+        "lat": 41.680981,
+        "lng": -0.85131
       },
       "caracteristicas": {
         "m2_construidos": 86,
@@ -125,16 +125,16 @@ window.INMO_DB = {
         "Puerta blindada",
         "Suelo de tarima"
       ],
-      "descripcion": "Loft de 86 m² construidos (74 m² útiles) situado en Calle de Goya, 134, en el distrito de Hortaleza. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. Cuenta con una terraza de 11 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Loft de 86 m² construidos (74 m² útiles) situado en Calle de León XIII, 134, en el distrito de Santa Isabel. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. Cuenta con una terraza de 11 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0031-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0031-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0031-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0031-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0031-5/1200/800",
-        "https://picsum.photos/seed/SANZ-0031-6/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=36762",
+        "https://loremflickr.com/1200/800/living-room?lock=59143",
+        "https://loremflickr.com/1200/800/kitchen?lock=81524",
+        "https://loremflickr.com/1200/800/bedroom?lock=3905",
+        "https://loremflickr.com/1200/800/bathroom?lock=26286",
+        "https://loremflickr.com/1200/800/apartment,hallway?lock=48667"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0031-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=36762",
       "fecha_publicacion": "2026-08-22"
     },
     {
@@ -144,17 +144,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "disponible",
       "destacado": true,
-      "precio": 950,
-      "precio_texto": "950 €/mes",
-      "titulo": "Acogedor Piso céntrico en Moncloa-Aravaca",
+      "precio": 800,
+      "precio_texto": "800 €/mes",
+      "titulo": "Acogedor Piso céntrico en Actur-Rey Fernando",
       "ubicacion": {
-        "direccion": "Calle de Serrano, 166",
-        "barrio": "Moncloa-Aravaca",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28008",
-        "lat": 40.432111,
-        "lng": -3.718533
+        "direccion": "Calle del Coso, 166",
+        "barrio": "Actur-Rey Fernando",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50018",
+        "lat": 41.669611,
+        "lng": -0.885033
       },
       "caracteristicas": {
         "m2_construidos": 52,
@@ -188,16 +188,16 @@ window.INMO_DB = {
         "Videoportero",
         "Zonas comunes ajardinadas"
       ],
-      "descripcion": "Piso de 52 m² construidos (47 m² útiles) situado en Calle de Serrano, 166, en el distrito de Moncloa-Aravaca. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Piso de 52 m² construidos (47 m² útiles) situado en Calle del Coso, 166, en el distrito de Actur-Rey Fernando. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0030-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0030-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0030-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0030-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0030-5/1200/800",
-        "https://picsum.photos/seed/SANZ-0030-6/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=32057",
+        "https://loremflickr.com/1200/800/living-room?lock=99200",
+        "https://loremflickr.com/1200/800/kitchen?lock=76819",
+        "https://loremflickr.com/1200/800/bedroom?lock=64914",
+        "https://loremflickr.com/1200/800/bathroom?lock=42533",
+        "https://loremflickr.com/1200/800/apartment,hallway?lock=9676"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0030-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=32057",
       "fecha_publicacion": "2026-08-06"
     },
     {
@@ -209,15 +209,15 @@ window.INMO_DB = {
       "destacado": true,
       "precio": 390000,
       "precio_texto": "390.000 €",
-      "titulo": "Luminoso Piso con 3 dormitorios en Latina",
+      "titulo": "Luminoso Piso con 3 dormitorios en El Rabal (Arrabal)",
       "ubicacion": {
-        "direccion": "Calle de Embajadores, 20",
-        "barrio": "Latina",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28047",
-        "lat": 40.400151,
-        "lng": -3.736656
+        "direccion": "Avenida de César Augusto, 20",
+        "barrio": "El Rabal (Arrabal)",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50015",
+        "lat": 41.664151,
+        "lng": -0.875656
       },
       "caracteristicas": {
         "m2_construidos": 109,
@@ -250,15 +250,15 @@ window.INMO_DB = {
         "Chimenea",
         "Ventanas de climalit"
       ],
-      "descripcion": "Piso de 109 m² construidos (90 m² útiles) situado en Calle de Embajadores, 20, en el distrito de Latina. La vivienda se distribuye en 3 dormitorios y 1 baño, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Piso de 109 m² construidos (90 m² útiles) situado en Avenida de César Augusto, 20, en el distrito de El Rabal (Arrabal). La vivienda se distribuye en 3 dormitorios y 1 baño, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0018-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0018-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0018-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0018-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0018-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=63167",
+        "https://loremflickr.com/1200/800/living-room?lock=40786",
+        "https://loremflickr.com/1200/800/kitchen?lock=18405",
+        "https://loremflickr.com/1200/800/bedroom?lock=75072",
+        "https://loremflickr.com/1200/800/bathroom?lock=52691"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0018-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=63167",
       "fecha_publicacion": "2026-08-03"
     },
     {
@@ -268,17 +268,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "alquilado",
       "destacado": true,
-      "precio": 1565,
-      "precio_texto": "1565 €/mes",
-      "titulo": "Piso reformado cerca del metro en Ciudad Lineal",
+      "precio": 1315,
+      "precio_texto": "1315 €/mes",
+      "titulo": "Piso reformado cerca del tranvía en Oliver-Valdefierro",
       "ubicacion": {
-        "direccion": "Calle de Santa Engracia, 21",
-        "barrio": "Ciudad Lineal",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28017",
-        "lat": 40.45421,
-        "lng": -3.645606
+        "direccion": "Avenida de Valencia, 21",
+        "barrio": "Oliver-Valdefierro",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50011",
+        "lat": 41.64621,
+        "lng": -0.925606
       },
       "caracteristicas": {
         "m2_construidos": 75,
@@ -312,15 +312,15 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Piso de 75 m² construidos (69 m² útiles) situado en Calle de Santa Engracia, 21, en el distrito de Ciudad Lineal. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Piso de 75 m² construidos (69 m² útiles) situado en Avenida de Valencia, 21, en el distrito de Oliver-Valdefierro. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0008-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0008-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0008-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0008-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0008-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=84778",
+        "https://loremflickr.com/1200/800/living-room?lock=7159",
+        "https://loremflickr.com/1200/800/kitchen?lock=29540",
+        "https://loremflickr.com/1200/800/bedroom?lock=51921",
+        "https://loremflickr.com/1200/800/bathroom?lock=74302"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0008-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=84778",
       "fecha_publicacion": "2026-07-26"
     },
     {
@@ -330,17 +330,17 @@ window.INMO_DB = {
       "tipo": "dúplex",
       "estado_publicacion": "reservado",
       "destacado": true,
-      "precio": 1046000,
-      "precio_texto": "1.046.000 €",
-      "titulo": "Dúplex familiar junto a zonas verdes en Tetuán",
+      "precio": 823000,
+      "precio_texto": "823.000 €",
+      "titulo": "Dúplex familiar junto a zonas verdes en Las Fuentes",
       "ubicacion": {
-        "direccion": "Calle de Bravo Murillo, 176",
-        "barrio": "Tetuán",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28020",
-        "lat": 40.454315,
-        "lng": -3.701695
+        "direccion": "Paseo de Sagasta, 176",
+        "barrio": "Las Fuentes",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50002",
+        "lat": 41.643115,
+        "lng": -0.868495
       },
       "caracteristicas": {
         "m2_construidos": 162,
@@ -372,16 +372,16 @@ window.INMO_DB = {
         "Placas solares",
         "Videoportero"
       ],
-      "descripcion": "Dúplex de 162 m² construidos (139 m² útiles) situado en Calle de Bravo Murillo, 176, en el distrito de Tetuán. La vivienda se distribuye en 5 dormitorios y 3 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Dúplex de 162 m² construidos (139 m² útiles) situado en Paseo de Sagasta, 176, en el distrito de Las Fuentes. La vivienda se distribuye en 5 dormitorios y 3 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0010-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0010-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0010-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0010-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0010-5/1200/800",
-        "https://picsum.photos/seed/SANZ-0010-6/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=23383",
+        "https://loremflickr.com/1200/800/living-room?lock=1002",
+        "https://loremflickr.com/1200/800/kitchen?lock=78621",
+        "https://loremflickr.com/1200/800/bedroom?lock=35288",
+        "https://loremflickr.com/1200/800/bathroom?lock=12907",
+        "https://loremflickr.com/1200/800/apartment,hallway?lock=90526"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0010-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=23383",
       "fecha_publicacion": "2026-05-24"
     },
     {
@@ -391,17 +391,17 @@ window.INMO_DB = {
       "tipo": "casa",
       "estado_publicacion": "disponible",
       "destacado": true,
-      "precio": 6540,
-      "precio_texto": "6540 €/mes",
-      "titulo": "Casa luminoso con terraza en Salamanca",
+      "precio": 5315,
+      "precio_texto": "5315 €/mes",
+      "titulo": "Casa luminoso con terraza en Casco Histórico",
       "ubicacion": {
-        "direccion": "Calle de Ríos Rosas, 103",
-        "barrio": "Salamanca",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28001",
-        "lat": 40.432326,
-        "lng": -3.678419
+        "direccion": "Calle de Miguel Servet, 103",
+        "barrio": "Casco Histórico",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50003",
+        "lat": 41.658426,
+        "lng": -0.876019
       },
       "caracteristicas": {
         "m2_construidos": 272,
@@ -436,15 +436,15 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Casa de 272 m² construidos (228 m² útiles) situado en Calle de Ríos Rosas, 103, en el distrito de Salamanca. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación noreste y una luminosidad excelente durante todo el día. Cuenta con una terraza de 11 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Casa de 272 m² construidos (228 m² útiles) situado en Calle de Miguel Servet, 103, en el distrito de Casco Histórico. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación noreste y una luminosidad excelente durante todo el día. Cuenta con una terraza de 11 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0004-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0004-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0004-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0004-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0004-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=61046",
+        "https://loremflickr.com/1200/800/living-room?lock=83427",
+        "https://loremflickr.com/1200/800/kitchen?lock=5808",
+        "https://loremflickr.com/1200/800/bedroom?lock=49141",
+        "https://loremflickr.com/1200/800/bathroom?lock=71522"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0004-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=61046",
       "fecha_publicacion": "2026-04-10"
     },
     {
@@ -454,17 +454,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "reservado",
       "destacado": true,
-      "precio": 469000,
-      "precio_texto": "469.000 €",
-      "titulo": "Piso exterior con mucha luz en Usera",
+      "precio": 674000,
+      "precio_texto": "674.000 €",
+      "titulo": "Piso exterior con mucha luz en Casablanca",
       "ubicacion": {
-        "direccion": "Avenida de la Albufera, 97",
-        "barrio": "Usera",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28026",
-        "lat": 40.387083,
-        "lng": -3.704499
+        "direccion": "Calle de Bretón, 97",
+        "barrio": "Casablanca",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50012",
+        "lat": 41.623583,
+        "lng": -0.906999
       },
       "caracteristicas": {
         "m2_construidos": 108,
@@ -495,14 +495,14 @@ window.INMO_DB = {
         "Calefacción central",
         "Cocina equipada"
       ],
-      "descripcion": "Piso de 108 m² construidos (89 m² útiles) situado en Avenida de la Albufera, 97, en el distrito de Usera. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación noreste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Piso de 108 m² construidos (89 m² útiles) situado en Calle de Bretón, 97, en el distrito de Casablanca. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación noreste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0015-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0015-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0015-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0015-4/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=9204",
+        "https://loremflickr.com/1200/800/living-room?lock=42061",
+        "https://loremflickr.com/1200/800/kitchen?lock=64442",
+        "https://loremflickr.com/1200/800/bedroom?lock=76347"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0015-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=9204",
       "fecha_publicacion": "2026-04-01"
     },
     {
@@ -512,17 +512,17 @@ window.INMO_DB = {
       "tipo": "ático",
       "estado_publicacion": "disponible",
       "destacado": true,
-      "precio": 1225,
-      "precio_texto": "1225 €/mes",
-      "titulo": "Acogedor Ático céntrico en Usera",
+      "precio": 1775,
+      "precio_texto": "1775 €/mes",
+      "titulo": "Acogedor Ático céntrico en Casablanca",
       "ubicacion": {
-        "direccion": "Calle de Toledo, 56",
-        "barrio": "Usera",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28026",
-        "lat": 40.384577,
-        "lng": -3.70707
+        "direccion": "Calle de Don Jaime I, 56",
+        "barrio": "Casablanca",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50012",
+        "lat": 41.621077,
+        "lng": -0.90957
       },
       "caracteristicas": {
         "m2_construidos": 67,
@@ -558,16 +558,16 @@ window.INMO_DB = {
         "Cocina equipada",
         "Zonas comunes ajardinadas"
       ],
-      "descripcion": "Ático de 67 m² construidos (56 m² útiles) situado en Calle de Toledo, 56, en el distrito de Usera. La vivienda se distribuye en 4 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 34 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Ático de 67 m² construidos (56 m² útiles) situado en Calle de Don Jaime I, 56, en el distrito de Casablanca. La vivienda se distribuye en 4 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 34 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0025-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0025-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0025-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0025-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0025-5/1200/800",
-        "https://picsum.photos/seed/SANZ-0025-6/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=58023",
+        "https://loremflickr.com/1200/800/living-room?lock=35642",
+        "https://loremflickr.com/1200/800/kitchen?lock=13261",
+        "https://loremflickr.com/1200/800/bedroom?lock=69928",
+        "https://loremflickr.com/1200/800/bathroom?lock=47547",
+        "https://loremflickr.com/1200/800/apartment,hallway?lock=25166"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0025-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=58023",
       "fecha_publicacion": "2026-03-21"
     },
     {
@@ -577,17 +577,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "disponible",
       "destacado": true,
-      "precio": 331000,
-      "precio_texto": "331.000 €",
-      "titulo": "Piso exterior con mucha luz en Usera",
+      "precio": 476000,
+      "precio_texto": "476.000 €",
+      "titulo": "Piso exterior con mucha luz en Casablanca",
       "ubicacion": {
-        "direccion": "Calle Mayor, 54",
-        "barrio": "Usera",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28026",
-        "lat": 40.382712,
-        "lng": -3.699778
+        "direccion": "Paseo de la Independencia, 54",
+        "barrio": "Casablanca",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50012",
+        "lat": 41.619212,
+        "lng": -0.902278
       },
       "caracteristicas": {
         "m2_construidos": 71,
@@ -621,15 +621,15 @@ window.INMO_DB = {
         "Domótica",
         "Placas solares"
       ],
-      "descripcion": "Piso de 71 m² construidos (62 m² útiles) situado en Calle Mayor, 54, en el distrito de Usera. La vivienda se distribuye en 3 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Piso de 71 m² construidos (62 m² útiles) situado en Paseo de la Independencia, 54, en el distrito de Casablanca. La vivienda se distribuye en 3 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0009-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0009-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0009-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0009-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0009-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=4777",
+        "https://loremflickr.com/1200/800/living-room?lock=71920",
+        "https://loremflickr.com/1200/800/kitchen?lock=49539",
+        "https://loremflickr.com/1200/800/bedroom?lock=37634",
+        "https://loremflickr.com/1200/800/bathroom?lock=15253"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0009-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=4777",
       "fecha_publicacion": "2026-03-12"
     },
     {
@@ -639,17 +639,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "reservado",
       "destacado": false,
-      "precio": 2275,
-      "precio_texto": "2275 €/mes",
-      "titulo": "Piso amueblado listo para entrar en Chamartín",
+      "precio": 1700,
+      "precio_texto": "1700 €/mes",
+      "titulo": "Piso amueblado listo para entrar en San José",
       "ubicacion": {
-        "direccion": "Calle de Cartagena, 6",
-        "barrio": "Chamartín",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28016",
-        "lat": 40.460946,
-        "lng": -3.672585
+        "direccion": "Paseo de la Constitución, 6",
+        "barrio": "San José",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50008",
+        "lat": 41.641746,
+        "lng": -0.867585
       },
       "caracteristicas": {
         "m2_construidos": 87,
@@ -683,14 +683,14 @@ window.INMO_DB = {
         "Puerta blindada",
         "Videoportero"
       ],
-      "descripcion": "Piso de 87 m² construidos (80 m² útiles) situado en Calle de Cartagena, 6, en el distrito de Chamartín. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Piso de 87 m² construidos (80 m² útiles) situado en Paseo de la Constitución, 6, en el distrito de San José. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0014-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0014-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0014-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0014-4/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=98539",
+        "https://loremflickr.com/1200/800/living-room?lock=76158",
+        "https://loremflickr.com/1200/800/kitchen?lock=53777",
+        "https://loremflickr.com/1200/800/bedroom?lock=31396"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0014-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=98539",
       "fecha_publicacion": "2026-09-23"
     },
     {
@@ -700,17 +700,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 252000,
-      "precio_texto": "252.000 €",
-      "titulo": "Piso reformado a estrenar en pleno Carabanchel",
+      "precio": 283000,
+      "precio_texto": "283.000 €",
+      "titulo": "Piso reformado a estrenar en pleno Torrero-La Paz",
       "ubicacion": {
-        "direccion": "Calle de Alonso Cano, 36",
-        "barrio": "Carabanchel",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28025",
-        "lat": 40.379556,
-        "lng": -3.725791
+        "direccion": "Avenida de San José, 36",
+        "barrio": "Torrero-La Paz",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50007",
+        "lat": 41.627556,
+        "lng": -0.878791
       },
       "caracteristicas": {
         "m2_construidos": 109,
@@ -744,15 +744,15 @@ window.INMO_DB = {
         "Videoportero",
         "Zonas comunes ajardinadas"
       ],
-      "descripcion": "Piso de 109 m² construidos (92 m² útiles) situado en Calle de Alonso Cano, 36, en el distrito de Carabanchel. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Piso de 109 m² construidos (92 m² útiles) situado en Avenida de San José, 36, en el distrito de Torrero-La Paz. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0020-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0020-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0020-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0020-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0020-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=75908",
+        "https://loremflickr.com/1200/800/living-room?lock=41469",
+        "https://loremflickr.com/1200/800/kitchen?lock=63850",
+        "https://loremflickr.com/1200/800/bedroom?lock=43051",
+        "https://loremflickr.com/1200/800/bathroom?lock=65432"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0020-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=75908",
       "fecha_publicacion": "2026-09-18"
     },
     {
@@ -762,17 +762,17 @@ window.INMO_DB = {
       "tipo": "dúplex",
       "estado_publicacion": "vendido",
       "destacado": false,
-      "precio": 683400,
-      "precio_texto": "683.400 €",
-      "titulo": "Dúplex con terraza y vistas despejadas — Chamartín",
+      "precio": 516400,
+      "precio_texto": "516.400 €",
+      "titulo": "Dúplex con terraza y vistas despejadas — San José",
       "ubicacion": {
-        "direccion": "Calle de Ríos Rosas, 4",
-        "barrio": "Chamartín",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28016",
-        "lat": 40.458501,
-        "lng": -3.674879
+        "direccion": "Calle de Miguel Servet, 4",
+        "barrio": "San José",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50008",
+        "lat": 41.639301,
+        "lng": -0.869879
       },
       "caracteristicas": {
         "m2_construidos": 171,
@@ -808,16 +808,16 @@ window.INMO_DB = {
         "Domótica",
         "Ventanas de climalit"
       ],
-      "descripcion": "Dúplex de 171 m² construidos (145 m² útiles) situado en Calle de Ríos Rosas, 4, en el distrito de Chamartín. La vivienda se distribuye en 5 dormitorios y 1 baño, con orientación norte y una luminosidad excelente durante todo el día. Cuenta con una terraza de 16 m² perfecta para el día a día. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Dúplex de 171 m² construidos (145 m² útiles) situado en Calle de Miguel Servet, 4, en el distrito de San José. La vivienda se distribuye en 5 dormitorios y 1 baño, con orientación norte y una luminosidad excelente durante todo el día. Cuenta con una terraza de 16 m² perfecta para el día a día. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0026-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0026-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0026-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0026-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0026-5/1200/800",
-        "https://picsum.photos/seed/SANZ-0026-6/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=55202",
+        "https://loremflickr.com/1200/800/living-room?lock=77583",
+        "https://loremflickr.com/1200/800/kitchen?lock=99964",
+        "https://loremflickr.com/1200/800/bedroom?lock=22345",
+        "https://loremflickr.com/1200/800/bathroom?lock=44726",
+        "https://loremflickr.com/1200/800/apartment,hallway?lock=67107"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0026-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=55202",
       "fecha_publicacion": "2026-09-03"
     },
     {
@@ -827,17 +827,17 @@ window.INMO_DB = {
       "tipo": "dúplex",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 2975,
-      "precio_texto": "2975 €/mes",
-      "titulo": "Dúplex amueblado listo para entrar en Arganzuela",
+      "precio": 2475,
+      "precio_texto": "2475 €/mes",
+      "titulo": "Dúplex amueblado listo para entrar en La Almozara",
       "ubicacion": {
-        "direccion": "Calle de Ferraz, 1",
-        "barrio": "Arganzuela",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28045",
-        "lat": 40.390499,
-        "lng": -3.694468
+        "direccion": "Avenida de Tenor Fleta, 1",
+        "barrio": "La Almozara",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50003",
+        "lat": 41.659499,
+        "lng": -0.900668
       },
       "caracteristicas": {
         "m2_construidos": 173,
@@ -875,14 +875,14 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Dúplex de 173 m² construidos (158 m² útiles) situado en Calle de Ferraz, 1, en el distrito de Arganzuela. La vivienda se distribuye en 5 dormitorios y 3 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 12 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Dúplex de 173 m² construidos (158 m² útiles) situado en Avenida de Tenor Fleta, 1, en el distrito de La Almozara. La vivienda se distribuye en 5 dormitorios y 3 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 12 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0017-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0017-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0017-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0017-4/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=72838",
+        "https://loremflickr.com/1200/800/living-room?lock=95219",
+        "https://loremflickr.com/1200/800/kitchen?lock=17600",
+        "https://loremflickr.com/1200/800/bedroom?lock=60933"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0017-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=72838",
       "fecha_publicacion": "2026-08-24"
     },
     {
@@ -892,17 +892,17 @@ window.INMO_DB = {
       "tipo": "estudio",
       "estado_publicacion": "reservado",
       "destacado": false,
-      "precio": 550,
-      "precio_texto": "550 €/mes",
-      "titulo": "Estudio reformado cerca del metro en Carabanchel",
+      "precio": 590,
+      "precio_texto": "590 €/mes",
+      "titulo": "Estudio reformado cerca del tranvía en Torrero-La Paz",
       "ubicacion": {
-        "direccion": "Calle de Cartagena, 129",
-        "barrio": "Carabanchel",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28025",
-        "lat": 40.374348,
-        "lng": -3.727223
+        "direccion": "Paseo de la Constitución, 129",
+        "barrio": "Torrero-La Paz",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50007",
+        "lat": 41.622348,
+        "lng": -0.880223
       },
       "caracteristicas": {
         "m2_construidos": 39,
@@ -934,16 +934,16 @@ window.INMO_DB = {
         "Cocina equipada",
         "Placas solares"
       ],
-      "descripcion": "Estudio de 39 m² construidos (35 m² útiles) situado en Calle de Cartagena, 129, en el distrito de Carabanchel. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Estudio de 39 m² construidos (35 m² útiles) situado en Paseo de la Constitución, 129, en el distrito de Torrero-La Paz. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0022-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0022-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0022-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0022-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0022-5/1200/800",
-        "https://picsum.photos/seed/SANZ-0022-6/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=29654",
+        "https://loremflickr.com/1200/800/living-room?lock=52035",
+        "https://loremflickr.com/1200/800/kitchen?lock=74416",
+        "https://loremflickr.com/1200/800/bedroom?lock=17749",
+        "https://loremflickr.com/1200/800/bathroom?lock=40130",
+        "https://loremflickr.com/1200/800/apartment,hallway?lock=62511"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0022-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=29654",
       "fecha_publicacion": "2026-08-20"
     },
     {
@@ -953,17 +953,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 1400,
-      "precio_texto": "1400 €/mes",
-      "titulo": "Piso reformado cerca del metro en Carabanchel",
+      "precio": 1575,
+      "precio_texto": "1575 €/mes",
+      "titulo": "Piso reformado cerca del tranvía en Torrero-La Paz",
       "ubicacion": {
-        "direccion": "Calle de Fuencarral, 133",
-        "barrio": "Carabanchel",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28025",
-        "lat": 40.385282,
-        "lng": -3.733661
+        "direccion": "Avenida de Goya, 133",
+        "barrio": "Torrero-La Paz",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50007",
+        "lat": 41.633282,
+        "lng": -0.886661
       },
       "caracteristicas": {
         "m2_construidos": 85,
@@ -997,14 +997,14 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Piso de 85 m² construidos (76 m² útiles) situado en Calle de Fuencarral, 133, en el distrito de Carabanchel. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación este y una luminosidad excelente durante todo el día. Cuenta con una terraza de 15 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Piso de 85 m² construidos (76 m² útiles) situado en Avenida de Goya, 133, en el distrito de Torrero-La Paz. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación este y una luminosidad excelente durante todo el día. Cuenta con una terraza de 15 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0012-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0012-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0012-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0012-4/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=99665",
+        "https://loremflickr.com/1200/800/living-room?lock=66808",
+        "https://loremflickr.com/1200/800/kitchen?lock=44427",
+        "https://loremflickr.com/1200/800/bedroom?lock=32522"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0012-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=99665",
       "fecha_publicacion": "2026-08-18"
     },
     {
@@ -1014,17 +1014,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 825,
-      "precio_texto": "825 €/mes",
-      "titulo": "Piso amueblado listo para entrar en Usera",
+      "precio": 1175,
+      "precio_texto": "1175 €/mes",
+      "titulo": "Piso amueblado listo para entrar en Casablanca",
       "ubicacion": {
-        "direccion": "Calle de Ríos Rosas, 165",
-        "barrio": "Usera",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28026",
-        "lat": 40.384893,
-        "lng": -3.707658
+        "direccion": "Calle de Miguel Servet, 165",
+        "barrio": "Casablanca",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50012",
+        "lat": 41.621393,
+        "lng": -0.910158
       },
       "caracteristicas": {
         "m2_construidos": 69,
@@ -1056,15 +1056,15 @@ window.INMO_DB = {
         "Domótica",
         "Placas solares"
       ],
-      "descripcion": "Piso de 69 m² construidos (63 m² útiles) situado en Calle de Ríos Rosas, 165, en el distrito de Usera. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 9 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Piso de 69 m² construidos (63 m² útiles) situado en Calle de Miguel Servet, 165, en el distrito de Casablanca. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 9 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0011-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0011-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0011-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0011-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0011-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=60768",
+        "https://loremflickr.com/1200/800/living-room?lock=93625",
+        "https://loremflickr.com/1200/800/kitchen?lock=16006",
+        "https://loremflickr.com/1200/800/bedroom?lock=48863",
+        "https://loremflickr.com/1200/800/bathroom?lock=71244"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0011-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=60768",
       "fecha_publicacion": "2026-07-31"
     },
     {
@@ -1074,17 +1074,17 @@ window.INMO_DB = {
       "tipo": "dúplex",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 355000,
-      "precio_texto": "355.000 €",
-      "titulo": "Dúplex reformado a estrenar en pleno San Blas-Canillejas",
+      "precio": 585000,
+      "precio_texto": "585.000 €",
+      "titulo": "Dúplex reformado a estrenar en pleno Romareda",
       "ubicacion": {
-        "direccion": "Calle de Alonso Cano, 100",
-        "barrio": "San Blas-Canillejas",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28022",
-        "lat": 40.430914,
-        "lng": -3.60827
+        "direccion": "Avenida de San José, 100",
+        "barrio": "Romareda",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50006",
+        "lat": 41.635914,
+        "lng": -0.88627
       },
       "caracteristicas": {
         "m2_construidos": 137,
@@ -1117,15 +1117,15 @@ window.INMO_DB = {
         "Placas solares",
         "Videoportero"
       ],
-      "descripcion": "Dúplex de 137 m² construidos (114 m² útiles) situado en Calle de Alonso Cano, 100, en el distrito de San Blas-Canillejas. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Dúplex de 137 m² construidos (114 m² útiles) situado en Avenida de San José, 100, en el distrito de Romareda. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0029-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0029-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0029-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0029-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0029-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=19139",
+        "https://loremflickr.com/1200/800/living-room?lock=96758",
+        "https://loremflickr.com/1200/800/kitchen?lock=74377",
+        "https://loremflickr.com/1200/800/bedroom?lock=51996",
+        "https://loremflickr.com/1200/800/bathroom?lock=29615"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0029-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=19139",
       "fecha_publicacion": "2026-07-21"
     },
     {
@@ -1135,17 +1135,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 344000,
-      "precio_texto": "344.000 €",
-      "titulo": "Piso con terraza y vistas despejadas — Moncloa-Aravaca",
+      "precio": 291000,
+      "precio_texto": "291.000 €",
+      "titulo": "Piso con terraza y vistas despejadas — Actur-Rey Fernando",
       "ubicacion": {
-        "direccion": "Calle de López de Hoyos, 151",
-        "barrio": "Moncloa-Aravaca",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28008",
-        "lat": 40.437591,
-        "lng": -3.724416
+        "direccion": "Camino de las Torres, 151",
+        "barrio": "Actur-Rey Fernando",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50018",
+        "lat": 41.675091,
+        "lng": -0.890916
       },
       "caracteristicas": {
         "m2_construidos": 68,
@@ -1178,15 +1178,15 @@ window.INMO_DB = {
         "Placas solares",
         "Preinstalación de carga para VE"
       ],
-      "descripcion": "Piso de 68 m² construidos (57 m² útiles) situado en Calle de López de Hoyos, 151, en el distrito de Moncloa-Aravaca. La vivienda se distribuye en 4 dormitorios y 2 baños, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Piso de 68 m² construidos (57 m² útiles) situado en Camino de las Torres, 151, en el distrito de Actur-Rey Fernando. La vivienda se distribuye en 4 dormitorios y 2 baños, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0023-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0023-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0023-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0023-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0023-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=87701",
+        "https://loremflickr.com/1200/800/living-room?lock=54844",
+        "https://loremflickr.com/1200/800/kitchen?lock=32463",
+        "https://loremflickr.com/1200/800/bedroom?lock=99606",
+        "https://loremflickr.com/1200/800/bathroom?lock=77225"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0023-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=87701",
       "fecha_publicacion": "2026-07-08"
     },
     {
@@ -1196,17 +1196,17 @@ window.INMO_DB = {
       "tipo": "estudio",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 478300,
-      "precio_texto": "478.300 €",
-      "titulo": "Luminoso Estudio con 0 dormitorios en Salamanca",
+      "precio": 395300,
+      "precio_texto": "395.300 €",
+      "titulo": "Luminoso Estudio con 0 dormitorios en Casco Histórico",
       "ubicacion": {
-        "direccion": "Calle de Velázquez, 122",
-        "barrio": "Salamanca",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28001",
-        "lat": 40.424633,
-        "lng": -3.682694
+        "direccion": "Paseo de Pamplona, 122",
+        "barrio": "Casco Histórico",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50003",
+        "lat": 41.650733,
+        "lng": -0.880294
       },
       "caracteristicas": {
         "m2_construidos": 44,
@@ -1242,14 +1242,14 @@ window.INMO_DB = {
         "Suelo de tarima",
         "Ventanas de climalit"
       ],
-      "descripcion": "Estudio de 44 m² construidos (38 m² útiles) situado en Calle de Velázquez, 122, en el distrito de Salamanca. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 17 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Estudio de 44 m² construidos (38 m² útiles) situado en Paseo de Pamplona, 122, en el distrito de Casco Histórico. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 17 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0028-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0028-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0028-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0028-4/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=50220",
+        "https://loremflickr.com/1200/800/living-room?lock=83077",
+        "https://loremflickr.com/1200/800/kitchen?lock=5458",
+        "https://loremflickr.com/1200/800/bedroom?lock=17363"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0028-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=50220",
       "fecha_publicacion": "2026-06-15"
     },
     {
@@ -1259,17 +1259,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "alquilado",
       "destacado": false,
-      "precio": 2890,
-      "precio_texto": "2890 €/mes",
-      "titulo": "Acogedor Piso céntrico en Chamartín",
+      "precio": 2100,
+      "precio_texto": "2100 €/mes",
+      "titulo": "Acogedor Piso céntrico en San José",
       "ubicacion": {
-        "direccion": "Calle de Ríos Rosas, 166",
-        "barrio": "Chamartín",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28016",
-        "lat": 40.465429,
-        "lng": -3.675394
+        "direccion": "Calle de Miguel Servet, 166",
+        "barrio": "San José",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50008",
+        "lat": 41.646229,
+        "lng": -0.870394
       },
       "caracteristicas": {
         "m2_construidos": 104,
@@ -1279,7 +1279,7 @@ window.INMO_DB = {
         "planta": 3,
         "planta_texto": "3ª planta",
         "ascensor": true,
-        "garaje": true,
+        "garaje": false,
         "trastero": false,
         "terraza": false,
         "m2_terraza": 0,
@@ -1304,16 +1304,16 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Zonas comunes ajardinadas"
       ],
-      "descripcion": "Piso de 104 m² construidos (95 m² útiles) situado en Calle de Ríos Rosas, 166, en el distrito de Chamartín. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Piso de 104 m² construidos (95 m² útiles) situado en Calle de Miguel Servet, 166, en el distrito de San José. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0006-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0006-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0006-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0006-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0006-5/1200/800",
-        "https://picsum.photos/seed/SANZ-0006-6/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=40004",
+        "https://loremflickr.com/1200/800/living-room?lock=72861",
+        "https://loremflickr.com/1200/800/kitchen?lock=95242",
+        "https://loremflickr.com/1200/800/bedroom?lock=7147",
+        "https://loremflickr.com/1200/800/bathroom?lock=29528",
+        "https://loremflickr.com/1200/800/apartment,hallway?lock=62385"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0006-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=40004",
       "fecha_publicacion": "2026-05-19"
     },
     {
@@ -1325,15 +1325,15 @@ window.INMO_DB = {
       "destacado": false,
       "precio": 313000,
       "precio_texto": "313.000 €",
-      "titulo": "Loft de diseño con acabados de calidad en Latina",
+      "titulo": "Loft de diseño con acabados de calidad en El Rabal (Arrabal)",
       "ubicacion": {
-        "direccion": "Calle de Alonso Cano, 36",
-        "barrio": "Latina",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28047",
-        "lat": 40.398298,
-        "lng": -3.736204
+        "direccion": "Avenida de San José, 36",
+        "barrio": "El Rabal (Arrabal)",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50015",
+        "lat": 41.662298,
+        "lng": -0.875204
       },
       "caracteristicas": {
         "m2_construidos": 90,
@@ -1367,14 +1367,14 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Loft de 90 m² construidos (80 m² útiles) situado en Calle de Alonso Cano, 36, en el distrito de Latina. La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Loft de 90 m² construidos (80 m² útiles) situado en Avenida de San José, 36, en el distrito de El Rabal (Arrabal). La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0002-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0002-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0002-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0002-4/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=2096",
+        "https://loremflickr.com/1200/800/living-room?lock=34953",
+        "https://loremflickr.com/1200/800/kitchen?lock=57334",
+        "https://loremflickr.com/1200/800/bedroom?lock=90191"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0002-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=2096",
       "fecha_publicacion": "2026-05-15"
     },
     {
@@ -1384,17 +1384,17 @@ window.INMO_DB = {
       "tipo": "loft",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 581000,
-      "precio_texto": "581.000 €",
-      "titulo": "Loft con terraza y vistas despejadas — Salamanca",
+      "precio": 472000,
+      "precio_texto": "472.000 €",
+      "titulo": "Loft con terraza y vistas despejadas — Casco Histórico",
       "ubicacion": {
-        "direccion": "Calle de Santa Engracia, 2",
-        "barrio": "Salamanca",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28001",
-        "lat": 40.43617,
-        "lng": -3.681996
+        "direccion": "Avenida de Valencia, 2",
+        "barrio": "Casco Histórico",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50003",
+        "lat": 41.66227,
+        "lng": -0.879596
       },
       "caracteristicas": {
         "m2_construidos": 60,
@@ -1427,15 +1427,15 @@ window.INMO_DB = {
         "Placas solares",
         "Ventanas de climalit"
       ],
-      "descripcion": "Loft de 60 m² construidos (50 m² útiles) situado en Calle de Santa Engracia, 2, en el distrito de Salamanca. La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación suroeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Loft de 60 m² construidos (50 m² útiles) situado en Avenida de Valencia, 2, en el distrito de Casco Histórico. La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación suroeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0001-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0001-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0001-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0001-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0001-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=30465",
+        "https://loremflickr.com/1200/800/living-room?lock=97608",
+        "https://loremflickr.com/1200/800/kitchen?lock=75227",
+        "https://loremflickr.com/1200/800/bedroom?lock=63322",
+        "https://loremflickr.com/1200/800/bathroom?lock=40941"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0001-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=30465",
       "fecha_publicacion": "2026-05-09"
     },
     {
@@ -1445,17 +1445,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "alquilado",
       "destacado": false,
-      "precio": 1100,
-      "precio_texto": "1100 €/mes",
-      "titulo": "Piso exterior con 4 habitaciones en Usera",
+      "precio": 1575,
+      "precio_texto": "1575 €/mes",
+      "titulo": "Piso exterior con 4 habitaciones en Casablanca",
       "ubicacion": {
-        "direccion": "Avenida de la Albufera, 20",
-        "barrio": "Usera",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28026",
-        "lat": 40.378196,
-        "lng": -3.702293
+        "direccion": "Calle de Bretón, 20",
+        "barrio": "Casablanca",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50012",
+        "lat": 41.614696,
+        "lng": -0.904793
       },
       "caracteristicas": {
         "m2_construidos": 102,
@@ -1490,15 +1490,15 @@ window.INMO_DB = {
         "Cocina equipada",
         "Domótica"
       ],
-      "descripcion": "Piso de 102 m² construidos (87 m² útiles) situado en Avenida de la Albufera, 20, en el distrito de Usera. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Piso de 102 m² construidos (87 m² útiles) situado en Calle de Bretón, 20, en el distrito de Casablanca. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0019-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0019-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0019-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0019-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0019-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=50952",
+        "https://loremflickr.com/1200/800/living-room?lock=83809",
+        "https://loremflickr.com/1200/800/kitchen?lock=6190",
+        "https://loremflickr.com/1200/800/bedroom?lock=39047",
+        "https://loremflickr.com/1200/800/bathroom?lock=61428"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0019-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=50952",
       "fecha_publicacion": "2026-05-06"
     },
     {
@@ -1508,17 +1508,17 @@ window.INMO_DB = {
       "tipo": "ático",
       "estado_publicacion": "reservado",
       "destacado": false,
-      "precio": 624500,
-      "precio_texto": "624.500 €",
-      "titulo": "Ático familiar junto a zonas verdes en Salamanca",
+      "precio": 516500,
+      "precio_texto": "516.500 €",
+      "titulo": "Ático familiar junto a zonas verdes en Casco Histórico",
       "ubicacion": {
-        "direccion": "Calle de Goya, 56",
-        "barrio": "Salamanca",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28001",
-        "lat": 40.4306,
-        "lng": -3.682074
+        "direccion": "Calle de León XIII, 56",
+        "barrio": "Casco Histórico",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50003",
+        "lat": 41.6567,
+        "lng": -0.879674
       },
       "caracteristicas": {
         "m2_construidos": 77,
@@ -1552,15 +1552,15 @@ window.INMO_DB = {
         "Preinstalación de carga para VE",
         "Suelo de tarima"
       ],
-      "descripcion": "Ático de 77 m² construidos (63 m² útiles) situado en Calle de Goya, 56, en el distrito de Salamanca. La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 35 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Ático de 77 m² construidos (63 m² útiles) situado en Calle de León XIII, 56, en el distrito de Casco Histórico. La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 35 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0024-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0024-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0024-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0024-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0024-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=84880",
+        "https://loremflickr.com/1200/800/living-room?lock=17737",
+        "https://loremflickr.com/1200/800/kitchen?lock=40118",
+        "https://loremflickr.com/1200/800/bedroom?lock=72975",
+        "https://loremflickr.com/1200/800/bathroom?lock=95356"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0024-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=84880",
       "fecha_publicacion": "2026-03-24"
     },
     {
@@ -1570,17 +1570,17 @@ window.INMO_DB = {
       "tipo": "estudio",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 179000,
-      "precio_texto": "179.000 €",
-      "titulo": "Estudio familiar junto a zonas verdes en Carabanchel",
+      "precio": 201000,
+      "precio_texto": "201.000 €",
+      "titulo": "Estudio familiar junto a zonas verdes en Torrero-La Paz",
       "ubicacion": {
-        "direccion": "Calle de Santa Engracia, 179",
-        "barrio": "Carabanchel",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28025",
-        "lat": 40.383529,
-        "lng": -3.733282
+        "direccion": "Avenida de Valencia, 179",
+        "barrio": "Torrero-La Paz",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50007",
+        "lat": 41.631529,
+        "lng": -0.886282
       },
       "caracteristicas": {
         "m2_construidos": 43,
@@ -1617,15 +1617,15 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Estudio de 43 m² construidos (40 m² útiles) situado en Calle de Santa Engracia, 179, en el distrito de Carabanchel. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Estudio de 43 m² construidos (40 m² útiles) situado en Avenida de Valencia, 179, en el distrito de Torrero-La Paz. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0021-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0021-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0021-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0021-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0021-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=22651",
+        "https://loremflickr.com/1200/800/living-room?lock=270",
+        "https://loremflickr.com/1200/800/kitchen?lock=77889",
+        "https://loremflickr.com/1200/800/bedroom?lock=55508",
+        "https://loremflickr.com/1200/800/bathroom?lock=33127"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0021-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=22651",
       "fecha_publicacion": "2026-02-22"
     },
     {
@@ -1635,17 +1635,17 @@ window.INMO_DB = {
       "tipo": "dúplex",
       "estado_publicacion": "reservado",
       "destacado": false,
-      "precio": 4700,
-      "precio_texto": "4700 €/mes",
-      "titulo": "Dúplex reformado cerca del metro en Chamberí",
+      "precio": 4375,
+      "precio_texto": "4375 €/mes",
+      "titulo": "Dúplex reformado cerca del tranvía en Universidad",
       "ubicacion": {
-        "direccion": "Calle de Fuencarral, 66",
-        "barrio": "Chamberí",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28010",
-        "lat": 40.434749,
-        "lng": -3.707912
+        "direccion": "Avenida de Goya, 66",
+        "barrio": "Universidad",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50009",
+        "lat": 41.634749,
+        "lng": -0.901112
       },
       "caracteristicas": {
         "m2_construidos": 146,
@@ -1682,15 +1682,15 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Dúplex de 146 m² construidos (123 m² útiles) situado en Calle de Fuencarral, 66, en el distrito de Chamberí. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. Cuenta con una terraza de 9 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Dúplex de 146 m² construidos (123 m² útiles) situado en Avenida de Goya, 66, en el distrito de Universidad. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. Cuenta con una terraza de 9 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0007-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0007-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0007-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0007-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0007-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=86747",
+        "https://loremflickr.com/1200/800/living-room?lock=64366",
+        "https://loremflickr.com/1200/800/kitchen?lock=41985",
+        "https://loremflickr.com/1200/800/bedroom?lock=19604",
+        "https://loremflickr.com/1200/800/bathroom?lock=97223"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0007-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=86747",
       "fecha_publicacion": "2026-02-12"
     },
     {
@@ -1700,17 +1700,17 @@ window.INMO_DB = {
       "tipo": "dúplex",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 474000,
-      "precio_texto": "474.000 €",
-      "titulo": "Luminoso Dúplex con 5 dormitorios en San Blas-Canillejas",
+      "precio": 781000,
+      "precio_texto": "781.000 €",
+      "titulo": "Luminoso Dúplex con 5 dormitorios en Romareda",
       "ubicacion": {
-        "direccion": "Calle de Arturo Soria, 21",
-        "barrio": "San Blas-Canillejas",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28022",
-        "lat": 40.424658,
-        "lng": -3.608109
+        "direccion": "Avenida de Cataluña, 21",
+        "barrio": "Romareda",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50006",
+        "lat": 41.629658,
+        "lng": -0.886109
       },
       "caracteristicas": {
         "m2_construidos": 141,
@@ -1745,14 +1745,14 @@ window.INMO_DB = {
         "Preinstalación de carga para VE",
         "Ventanas de climalit"
       ],
-      "descripcion": "Dúplex de 141 m² construidos (118 m² útiles) situado en Calle de Arturo Soria, 21, en el distrito de San Blas-Canillejas. La vivienda se distribuye en 5 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Dúplex de 141 m² construidos (118 m² útiles) situado en Avenida de Cataluña, 21, en el distrito de Romareda. La vivienda se distribuye en 5 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0003-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0003-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0003-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0003-4/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=22119",
+        "https://loremflickr.com/1200/800/living-room?lock=99738",
+        "https://loremflickr.com/1200/800/kitchen?lock=77357",
+        "https://loremflickr.com/1200/800/bedroom?lock=34024"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0003-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=22119",
       "fecha_publicacion": "2026-01-22"
     },
     {
@@ -1762,17 +1762,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "reservado",
       "destacado": false,
-      "precio": 135000,
-      "precio_texto": "135.000 €",
-      "titulo": "Luminoso Piso con 1 dormitorios en Usera",
+      "precio": 195000,
+      "precio_texto": "195.000 €",
+      "titulo": "Luminoso Piso con 1 dormitorios en Casablanca",
       "ubicacion": {
-        "direccion": "Calle de Embajadores, 74",
-        "barrio": "Usera",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28026",
-        "lat": 40.377772,
-        "lng": -3.705047
+        "direccion": "Avenida de César Augusto, 74",
+        "barrio": "Casablanca",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50012",
+        "lat": 41.614272,
+        "lng": -0.907547
       },
       "caracteristicas": {
         "m2_construidos": 57,
@@ -1806,16 +1806,16 @@ window.INMO_DB = {
         "Placas solares",
         "Suelo de tarima"
       ],
-      "descripcion": "Piso de 57 m² construidos (51 m² útiles) situado en Calle de Embajadores, 74, en el distrito de Usera. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación sureste y una luminosidad excelente durante todo el día. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Piso de 57 m² construidos (51 m² útiles) situado en Avenida de César Augusto, 74, en el distrito de Casablanca. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación sureste y una luminosidad excelente durante todo el día. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0005-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0005-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0005-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0005-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0005-5/1200/800",
-        "https://picsum.photos/seed/SANZ-0005-6/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=40149",
+        "https://loremflickr.com/1200/800/living-room?lock=7292",
+        "https://loremflickr.com/1200/800/kitchen?lock=84911",
+        "https://loremflickr.com/1200/800/bedroom?lock=52054",
+        "https://loremflickr.com/1200/800/bathroom?lock=29673",
+        "https://loremflickr.com/1200/800/apartment,hallway?lock=96816"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0005-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=40149",
       "fecha_publicacion": "2026-01-07"
     },
     {
@@ -1825,17 +1825,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "reservado",
       "destacado": false,
-      "precio": 2475,
-      "precio_texto": "2475 €/mes",
-      "titulo": "Acogedor Piso céntrico en Tetuán",
+      "precio": 1925,
+      "precio_texto": "1925 €/mes",
+      "titulo": "Acogedor Piso céntrico en Las Fuentes",
       "ubicacion": {
-        "direccion": "Calle de Fuencarral, 130",
-        "barrio": "Tetuán",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28020",
-        "lat": 40.456761,
-        "lng": -3.701123
+        "direccion": "Avenida de Goya, 130",
+        "barrio": "Las Fuentes",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50002",
+        "lat": 41.645561,
+        "lng": -0.867923
       },
       "caracteristicas": {
         "m2_construidos": 109,
@@ -1869,14 +1869,14 @@ window.INMO_DB = {
         "Domótica",
         "Ventanas de climalit"
       ],
-      "descripcion": "Piso de 109 m² construidos (91 m² útiles) situado en Calle de Fuencarral, 130, en el distrito de Tetuán. La vivienda se distribuye en 4 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 11 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Piso de 109 m² construidos (91 m² útiles) situado en Avenida de Goya, 130, en el distrito de Las Fuentes. La vivienda se distribuye en 4 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 11 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0016-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0016-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0016-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0016-4/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=41413",
+        "https://loremflickr.com/1200/800/living-room?lock=8556",
+        "https://loremflickr.com/1200/800/kitchen?lock=86175",
+        "https://loremflickr.com/1200/800/bedroom?lock=53318"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0016-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=41413",
       "fecha_publicacion": "2026-01-06"
     },
     {
@@ -1886,17 +1886,17 @@ window.INMO_DB = {
       "tipo": "casa",
       "estado_publicacion": "alquilado",
       "destacado": false,
-      "precio": 4100,
-      "precio_texto": "4100 €/mes",
-      "titulo": "Casa reformado cerca del metro en Chamartín",
+      "precio": 3075,
+      "precio_texto": "3075 €/mes",
+      "titulo": "Casa reformado cerca del tranvía en San José",
       "ubicacion": {
-        "direccion": "Calle del General Ricardos, 84",
-        "barrio": "Chamartín",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28016",
-        "lat": 40.465405,
-        "lng": -3.676296
+        "direccion": "Calle de Delicias, 84",
+        "barrio": "San José",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50008",
+        "lat": 41.646205,
+        "lng": -0.871296
       },
       "caracteristicas": {
         "m2_construidos": 157,
@@ -1930,15 +1930,15 @@ window.INMO_DB = {
         "Ventanas de climalit",
         "Videoportero"
       ],
-      "descripcion": "Casa de 157 m² construidos (142 m² útiles) situado en Calle del General Ricardos, 84, en el distrito de Chamartín. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación oeste y una luminosidad excelente durante todo el día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
+      "descripcion": "Casa de 157 m² construidos (142 m² útiles) situado en Calle de Delicias, 84, en el distrito de San José. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación oeste y una luminosidad excelente durante todo el día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0027-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0027-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0027-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0027-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0027-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=45953",
+        "https://loremflickr.com/1200/800/living-room?lock=13096",
+        "https://loremflickr.com/1200/800/kitchen?lock=90715",
+        "https://loremflickr.com/1200/800/bedroom?lock=78810",
+        "https://loremflickr.com/1200/800/bathroom?lock=56429"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0027-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=45953",
       "fecha_publicacion": "2026-01-01"
     },
     {
@@ -1948,17 +1948,17 @@ window.INMO_DB = {
       "tipo": "piso",
       "estado_publicacion": "disponible",
       "destacado": false,
-      "precio": 449000,
-      "precio_texto": "449.000 €",
-      "titulo": "Piso de diseño con acabados de calidad en Chamberí",
+      "precio": 420000,
+      "precio_texto": "420.000 €",
+      "titulo": "Piso de diseño con acabados de calidad en Universidad",
       "ubicacion": {
-        "direccion": "Avenida de la Albufera, 39",
-        "barrio": "Chamberí",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "cp": "28010",
-        "lat": 40.437643,
-        "lng": -3.703243
+        "direccion": "Calle de Bretón, 39",
+        "barrio": "Universidad",
+        "ciudad": "Zaragoza",
+        "provincia": "Zaragoza",
+        "cp": "50009",
+        "lat": 41.637643,
+        "lng": -0.896443
       },
       "caracteristicas": {
         "m2_construidos": 54,
@@ -1993,15 +1993,15 @@ window.INMO_DB = {
         "Conserje",
         "Placas solares"
       ],
-      "descripcion": "Piso de 54 m² construidos (46 m² útiles) situado en Avenida de la Albufera, 39, en el distrito de Chamberí. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación norte y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 10 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
+      "descripcion": "Piso de 54 m² construidos (46 m² útiles) situado en Calle de Bretón, 39, en el distrito de Universidad. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación norte y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 10 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://picsum.photos/seed/SANZ-0032-1/1200/800",
-        "https://picsum.photos/seed/SANZ-0032-2/1200/800",
-        "https://picsum.photos/seed/SANZ-0032-3/1200/800",
-        "https://picsum.photos/seed/SANZ-0032-4/1200/800",
-        "https://picsum.photos/seed/SANZ-0032-5/1200/800"
+        "https://loremflickr.com/1200/800/apartment,interior?lock=78655",
+        "https://loremflickr.com/1200/800/living-room?lock=56274",
+        "https://loremflickr.com/1200/800/kitchen?lock=33893",
+        "https://loremflickr.com/1200/800/bedroom?lock=90560",
+        "https://loremflickr.com/1200/800/bathroom?lock=68179"
       ],
-      "imagen_principal": "https://picsum.photos/seed/SANZ-0032-1/1200/800",
+      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=78655",
       "fecha_publicacion": "2025-12-31"
     }
   ]

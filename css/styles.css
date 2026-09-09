@@ -319,8 +319,12 @@ p {
 .hero {
   position: relative;
   color: #fff;
-  background: linear-gradient(180deg, rgba(12, 28, 43, 0.72), rgba(12, 28, 43, 0.82)),
-    url("https://picsum.photos/seed/sanz-hero/1920/1100") center / cover no-repeat;
+  background-color: var(--azul-900);
+  background-image: linear-gradient(180deg, rgba(12, 28, 43, 0.72), rgba(12, 28, 43, 0.82)),
+    url("https://loremflickr.com/1920/1100/apartment,living-room?lock=7");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero__inner {

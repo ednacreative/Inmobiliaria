@@ -16,7 +16,10 @@ Sitio **estático**, sin framework ni build obligatorio:
 - [Leaflet](https://leafletjs.com/) vía CDN para los mapas (tiles de OpenStreetMap).
 - "Base de datos" de propiedades en `data/propiedades.json` (+ copia `data/propiedades.js`
   para poder abrir la web sin servidor).
-- Imágenes de ejemplo desde `picsum.photos` y `pravatar.cc`.
+- Imágenes de ejemplo: interiores de vivienda desde `loremflickr.com` (con
+  respaldo automático a `picsum.photos` si algún recurso falla) y retratos del
+  equipo desde `pravatar.cc`.
+- Ciudad de referencia del prototipo: **Zaragoza** (barrios y coordenadas reales).
 
 ## Estructura
 

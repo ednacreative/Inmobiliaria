@@ -13,9 +13,9 @@
     { href: "venta.html", txt: "Comprar" },
     { href: "alquiler.html", txt: "Alquilar" },
     { href: "mapa.html", txt: "Mapa" },
-    { href: "nosotros.html", txt: "Nosotros" },
     { href: "informacion.html", txt: "Información" },
     { href: "contacto.html", txt: "Contacto" },
+    { href: "nosotros.html", txt: "Nosotros" },
   ];
 
   // Página actual (para marcar el enlace activo).
@@ -39,7 +39,7 @@
       '<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>' +
       '<nav class="nav" id="nav-principal">' +
       enlaces +
-      '<a class="btn btn--primario nav__cta" href="contacto.html">Vender mi inmueble</a>' +
+      '<a class="btn btn--primario nav__cta" href="contacto.html">Publica tu inmueble</a>' +
       "</nav>" +
       "</div>"
     );
@@ -54,7 +54,7 @@
       '<img class="pie__logo" src="assets/logo.svg" alt="' +
       NOMBRE +
       '" width="240" height="48">' +
-      "<p>Asesoramiento inmobiliario en Madrid desde 1998. Compra, venta y alquiler de viviendas con trato cercano y datos claros.</p>" +
+      "<p>Asesoramiento inmobiliario en Zaragoza desde 1998. Compra, venta y alquiler de viviendas con trato cercano y datos claros.</p>" +
       "</div>" +
       "<div><h4>Propiedades</h4><ul>" +
       '<li><a href="venta.html">Viviendas en venta</a></li>' +
@@ -69,9 +69,9 @@
       '<li><a href="contacto.html">Trabaja con nosotros</a></li>' +
       "</ul></div>" +
       "<div><h4>Contacto</h4><ul>" +
-      '<li><a href="tel:+34910000000">910 000 000</a></li>' +
+      '<li><a href="tel:+34976000000">976 000 000</a></li>' +
       '<li><a href="mailto:hola@inmobiliariasanz.es">hola@inmobiliariasanz.es</a></li>' +
-      "<li>Calle de Serrano, 120<br>28006 Madrid</li>" +
+      "<li>Paseo de la Independencia, 24<br>50004 Zaragoza</li>" +
       "<li>L–V 9:30–20:00 · S 10:00–14:00</li>" +
       "</ul></div>" +
       "</div>" +
@@ -85,6 +85,33 @@
       "</div>" +
       "</div>"
     );
+  }
+
+  // Si una foto de vivienda (loremflickr) no carga, se sustituye por una de
+  // picsum.photos para que la demo nunca muestre imágenes rotas.
+  document.addEventListener(
+    "error",
+    function (e) {
+      var img = e.target;
+      if (
+        img &&
+        img.tagName === "IMG" &&
+        !img.dataset.fallback &&
+        /loremflickr\.com/.test(img.src)
+      ) {
+        img.dataset.fallback = "1";
+        var m = img.src.match(/lock=(\d+)/);
+        var semilla = m ? m[1] : Math.abs(hashTxt(img.src));
+        img.src = "https://picsum.photos/seed/piso-" + semilla + "/1200/800";
+      }
+    },
+    true // fase de captura: el evento "error" de <img> no propaga
+  );
+
+  function hashTxt(s) {
+    var h = 0;
+    for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+    return h;
   }
 
   function montar() {

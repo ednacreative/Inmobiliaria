@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto · Inmobiliaria Sanz</title>
-  <meta name="description" content="Contacta con Inmobiliaria Sanz en Madrid. Solicita una valoración gratuita de tu vivienda o pide información sobre cualquier propiedad.">
+  <meta name="description" content="Contacta con Inmobiliaria Sanz en Zaragoza. Solicita una valoración gratuita de tu vivienda o pide información sobre cualquier propiedad.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,9 +54,9 @@
         <span class="antetitulo">Oficina</span>
         <h2>Dónde estamos</h2>
         <p>
-          Calle de Serrano, 120<br>
-          28006 Madrid<br><br>
-          <strong>Teléfono:</strong> <a href="tel:+34910000000">910 000 000</a><br>
+          Paseo de la Independencia, 24<br>
+          50004 Zaragoza<br><br>
+          <strong>Teléfono:</strong> <a href="tel:+34976000000">976 000 000</a><br>
           <strong>Email:</strong> <a href="mailto:hola@inmobiliariasanz.es">hola@inmobiliariasanz.es</a><br><br>
           <strong>Horario:</strong><br>
           Lunes a viernes: 9:30–20:00<br>
@@ -89,11 +89,11 @@
       if (typeof L !== "undefined") {
         var el = document.getElementById("mapa-oficina");
         if (el) {
-          var m = L.map(el, { scrollWheelZoom: false }).setView([40.4321, -3.6866], 15);
+          var m = L.map(el, { scrollWheelZoom: false }).setView([41.6485, -0.8894], 16);
           L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             attribution: "&copy; OpenStreetMap", maxZoom: 19
           }).addTo(m);
-          L.marker([40.4321, -3.6866]).addTo(m).bindPopup("Inmobiliaria Sanz<br>Calle de Serrano, 120");
+          L.marker([41.6485, -0.8894]).addTo(m).bindPopup("Inmobiliaria Sanz<br>Paseo de la Independencia, 24");
         }
       }
     })();

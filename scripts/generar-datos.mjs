@@ -4,8 +4,11 @@
  * Uso:  node scripts/generar-datos.mjs
  * Salida: data/propiedades.json
  *
- * Los datos son inventados y las imagenes son placeholders (picsum.photos).
- * Sustituye este fichero (o el JSON) por tus propiedades reales cuando toque.
+ * Los datos son inventados. Las imagenes son placeholders de interiores de
+ * vivienda servidos por loremflickr.com (fotos reales de Flickr por palabra
+ * clave, deterministas via ?lock=). Si loremflickr falla, la web cae de forma
+ * automatica a picsum.photos (ver el manejador global en js/layout.js).
+ * Sustituye este fichero (o directamente el JSON) por fotos reales cuando toque.
  */
 
 import { writeFileSync, mkdirSync } from "node:fs";
@@ -38,33 +41,34 @@ const round = (n, step) => Math.round(n / step) * step;
 /* ------------------------------------------------------------------ *
  * Catalogos
  * ------------------------------------------------------------------ */
-// Distritos de Madrid con coordenadas aproximadas de referencia.
+// Distritos / barrios de Zaragoza con coordenadas aproximadas de referencia.
 const DISTRITOS = [
-  { barrio: "Centro", ciudad: "Madrid", cp: "28013", lat: 40.4155, lng: -3.7074, nivel: 1.35 },
-  { barrio: "Salamanca", ciudad: "Madrid", cp: "28001", lat: 40.4302, lng: -3.6797, nivel: 1.6 },
-  { barrio: "Chamberí", ciudad: "Madrid", cp: "28010", lat: 40.4360, lng: -3.7038, nivel: 1.45 },
-  { barrio: "Retiro", ciudad: "Madrid", cp: "28009", lat: 40.4108, lng: -3.6773, nivel: 1.4 },
-  { barrio: "Chamartín", ciudad: "Madrid", cp: "28016", lat: 40.4600, lng: -3.6770, nivel: 1.4 },
-  { barrio: "Tetuán", ciudad: "Madrid", cp: "28020", lat: 40.4600, lng: -3.6980, nivel: 1.15 },
-  { barrio: "Arganzuela", ciudad: "Madrid", cp: "28045", lat: 40.3950, lng: -3.6950, nivel: 1.2 },
-  { barrio: "Moncloa-Aravaca", ciudad: "Madrid", cp: "28008", lat: 40.4350, lng: -3.7200, nivel: 1.3 },
-  { barrio: "Latina", ciudad: "Madrid", cp: "28047", lat: 40.4020, lng: -3.7400, nivel: 0.95 },
-  { barrio: "Carabanchel", ciudad: "Madrid", cp: "28025", lat: 40.3800, lng: -3.7300, nivel: 0.8 },
-  { barrio: "Usera", ciudad: "Madrid", cp: "28026", lat: 40.3820, lng: -3.7050, nivel: 0.8 },
-  { barrio: "Puente de Vallecas", ciudad: "Madrid", cp: "28018", lat: 40.3900, lng: -3.6650, nivel: 0.78 },
-  { barrio: "Ciudad Lineal", ciudad: "Madrid", cp: "28017", lat: 40.4500, lng: -3.6500, nivel: 1.0 },
-  { barrio: "Hortaleza", ciudad: "Madrid", cp: "28043", lat: 40.4750, lng: -3.6400, nivel: 1.1 },
-  { barrio: "Moratalaz", ciudad: "Madrid", cp: "28030", lat: 40.4070, lng: -3.6420, nivel: 0.9 },
-  { barrio: "San Blas-Canillejas", ciudad: "Madrid", cp: "28022", lat: 40.4300, lng: -3.6100, nivel: 0.85 },
+  { barrio: "Centro", ciudad: "Zaragoza", cp: "50004", lat: 41.6520, lng: -0.8809, nivel: 1.45 },
+  { barrio: "Casco Histórico", ciudad: "Zaragoza", cp: "50003", lat: 41.6563, lng: -0.8773, nivel: 1.3 },
+  { barrio: "Universidad", ciudad: "Zaragoza", cp: "50009", lat: 41.6360, lng: -0.8970, nivel: 1.35 },
+  { barrio: "Delicias", ciudad: "Zaragoza", cp: "50017", lat: 41.6470, lng: -0.9010, nivel: 1.0 },
+  { barrio: "San José", ciudad: "Zaragoza", cp: "50008", lat: 41.6408, lng: -0.8720, nivel: 1.05 },
+  { barrio: "Las Fuentes", ciudad: "Zaragoza", cp: "50002", lat: 41.6488, lng: -0.8648, nivel: 0.9 },
+  { barrio: "La Almozara", ciudad: "Zaragoza", cp: "50003", lat: 41.6640, lng: -0.9012, nivel: 1.0 },
+  { barrio: "Actur-Rey Fernando", ciudad: "Zaragoza", cp: "50018", lat: 41.6725, lng: -0.8865, nivel: 1.1 },
+  { barrio: "El Rabal (Arrabal)", ciudad: "Zaragoza", cp: "50015", lat: 41.6660, lng: -0.8790, nivel: 0.95 },
+  { barrio: "Torrero-La Paz", ciudad: "Zaragoza", cp: "50007", lat: 41.6280, lng: -0.8830, nivel: 0.9 },
+  { barrio: "Casablanca", ciudad: "Zaragoza", cp: "50012", lat: 41.6185, lng: -0.9075, nivel: 1.15 },
+  { barrio: "Miralbueno", ciudad: "Zaragoza", cp: "50011", lat: 41.6520, lng: -0.9345, nivel: 1.1 },
+  { barrio: "Oliver-Valdefierro", ciudad: "Zaragoza", cp: "50011", lat: 41.6420, lng: -0.9300, nivel: 0.82 },
+  { barrio: "Santa Isabel", ciudad: "Zaragoza", cp: "50016", lat: 41.6820, lng: -0.8500, nivel: 0.85 },
+  { barrio: "Parque Goya", ciudad: "Zaragoza", cp: "50015", lat: 41.6855, lng: -0.8930, nivel: 1.05 },
+  { barrio: "Romareda", ciudad: "Zaragoza", cp: "50006", lat: 41.6350, lng: -0.8880, nivel: 1.4 },
 ];
 
 const CALLES = [
-  "Calle Mayor", "Calle de Alcalá", "Calle de Serrano", "Calle de Génova", "Calle de Fuencarral",
-  "Calle de Bravo Murillo", "Calle de Goya", "Calle de Velázquez", "Paseo de la Castellana",
-  "Calle de Atocha", "Calle del Doctor Esquerdo", "Calle de Alonso Cano", "Calle de Ríos Rosas",
-  "Calle de Cartagena", "Avenida de Filipinas", "Calle de Embajadores", "Calle de Toledo",
-  "Calle de Santa Engracia", "Calle de Ferraz", "Calle de Marcelo Usera", "Avenida de la Albufera",
-  "Calle de Arturo Soria", "Calle de López de Hoyos", "Calle de Hermosilla", "Calle del General Ricardos",
+  "Paseo de la Independencia", "Calle de Alfonso I", "Calle del Coso", "Paseo de María Agustín",
+  "Avenida de Goya", "Paseo de Sagasta", "Calle de León XIII", "Paseo de Pamplona",
+  "Calle de San Miguel", "Avenida de Madrid", "Avenida de Navarra", "Avenida de San José",
+  "Calle de Miguel Servet", "Paseo de la Constitución", "Calle del Cinco de Marzo",
+  "Avenida de César Augusto", "Calle de Don Jaime I", "Avenida de Valencia", "Avenida de Tenor Fleta",
+  "Paseo de Fernando el Católico", "Calle de Bretón", "Avenida de Cataluña", "Camino de las Torres",
+  "Vía Hispanidad", "Calle de Delicias",
 ];
 
 const TIPOS = [
@@ -103,7 +107,7 @@ const TITULARES = {
     "Acogedor {tipo} céntrico en {barrio}",
     "{tipo} luminoso con terraza en {barrio}",
     "{tipo} ideal para profesionales en {barrio}",
-    "{tipo} reformado cerca del metro en {barrio}",
+    "{tipo} reformado cerca del tranvía en {barrio}",
   ],
 };
 
@@ -167,6 +171,34 @@ function distribucionDe(p) {
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 /* ------------------------------------------------------------------ *
+ * Imágenes de vivienda (placeholders temáticos de interiores)
+ * ------------------------------------------------------------------ */
+// Cada posición de la galería muestra una estancia distinta.
+const ESTANCIAS_FOTO = [
+  "apartment,interior",
+  "living-room",
+  "kitchen",
+  "bedroom",
+  "bathroom",
+  "apartment,hallway",
+];
+
+function hashCadena(s) {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+function imagenPiso(id, n) {
+  const tag = ESTANCIAS_FOTO[(n - 1) % ESTANCIAS_FOTO.length];
+  const lock = hashCadena(id + "-" + n) % 100000;
+  return `https://loremflickr.com/1200/800/${tag}?lock=${lock}`;
+}
+
+/* ------------------------------------------------------------------ *
  * Generacion principal
  * ------------------------------------------------------------------ */
 const TOTAL = 32;
@@ -212,10 +244,7 @@ for (let i = 1; i <= TOTAL; i++) {
   const extras = [...EXTRAS_POOL].sort(() => rand() - 0.5).slice(0, numExtras).sort();
 
   const numImgs = intBetween(4, 6);
-  const imagenes = Array.from(
-    { length: numImgs },
-    (_, n) => `https://picsum.photos/seed/${id}-${n + 1}/1200/800`
-  );
+  const imagenes = Array.from({ length: numImgs }, (_, n) => imagenPiso(id, n + 1));
 
   const p = {
     id,
@@ -240,7 +269,7 @@ for (let i = 1; i <= TOTAL; i++) {
       direccion: `${pick(CALLES)}, ${intBetween(1, 180)}`,
       barrio: distrito.barrio,
       ciudad: distrito.ciudad,
-      provincia: "Madrid",
+      provincia: "Zaragoza",
       cp: distrito.cp,
       lat: jitter(distrito.lat),
       lng: jitter(distrito.lng),
@@ -293,8 +322,8 @@ const salida = {
   fuente: "datos ficticios — generar-datos.mjs",
   agencia: {
     nombre: "Inmobiliaria Sanz",
-    ciudad: "Madrid",
-    centro_mapa: { lat: 40.4238, lng: -3.6905, zoom: 12 },
+    ciudad: "Zaragoza",
+    centro_mapa: { lat: 41.6488, lng: -0.8891, zoom: 13 },
   },
   total: propiedades.length,
   propiedades,
