@@ -292,13 +292,16 @@
           btn.textContent = "Enviando…";
         }
         var datos = {
+          "Tipo de solicitud": "Visita a una vivienda",
+          Referencia: p.referencia,
+          Inmueble: p.titulo,
+          Precio: Inmo.precio(p),
+          Ubicación: p.ubicacion.direccion + ", " + p.ubicacion.barrio,
           Nombre: f.nombre.value,
           Teléfono: f.telefono.value,
           Email: f.email.value,
           Mensaje: f.mensaje.value,
-          Referencia: p.referencia,
-          Inmueble: p.titulo,
-          Enlace: location.href,
+          Ficha: location.href,
         };
         var restaura = function () {
           if (btn) {
@@ -311,7 +314,18 @@
           return;
         }
         window.InmoForms.enviar(datos, {
-          asunto: "Solicitud de visita — ref. " + p.referencia,
+          asunto:
+            "📅 Solicitud de visita — " + p.referencia + " · " + p.ubicacion.barrio,
+          replyTo: f.email.value,
+          autorespuesta:
+            "Hola " +
+            f.nombre.value +
+            ",\n\nHemos recibido tu solicitud de visita para la referencia " +
+            p.referencia +
+            " (" +
+            p.titulo +
+            "). Te llamamos en breve para concretar el día y la hora.\n\n" +
+            "Un saludo,\nEquipo de Inmobiliaria Sanz\n976 000 000",
         })
           .then(function () {
             f.innerHTML = avisoOk(p);

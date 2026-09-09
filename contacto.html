@@ -96,10 +96,10 @@
           btn.textContent = "Enviando…";
           err.classList.add("oculto");
           var datos = {
+            "Tipo de mensaje": MOTIVOS[f.motivo.value] || f.motivo.value,
             Nombre: f.nombre.value,
             Email: f.email.value,
             Teléfono: f.telefono.value || "(no indicado)",
-            Motivo: MOTIVOS[f.motivo.value] || f.motivo.value,
             Mensaje: f.mensaje.value,
           };
           var fin = function () {
@@ -112,7 +112,14 @@
             ok.classList.remove("oculto");
             return;
           }
-          window.InmoForms.enviar(datos, { asunto: "Contacto web — " + datos.Motivo })
+          window.InmoForms.enviar(datos, {
+            asunto: "✉️ Contacto web — " + datos["Tipo de mensaje"],
+            replyTo: f.email.value,
+            autorespuesta:
+              "Hola " + f.nombre.value + ",\n\n" +
+              "Hemos recibido tu mensaje en Inmobiliaria Sanz y te responderemos el mismo día laborable.\n\n" +
+              "Un saludo,\nEquipo de Inmobiliaria Sanz\n976 000 000 · hola@inmobiliariasanz.es",
+          })
             .then(function () {
               f.classList.add("oculto");
               ok.classList.remove("oculto");

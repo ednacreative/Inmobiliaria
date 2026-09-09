@@ -98,7 +98,16 @@
       }
 
       window.InmoForms.enviar(datos, {
-        asunto: "Nuevo inmueble para publicar: " + titular,
+        asunto: "🏠 Nuevo inmueble para revisar: " + titular,
+        replyTo: f.elements.contacto_email.value,
+        autorespuesta:
+          "Hola " +
+          f.elements.contacto_nombre.value +
+          ",\n\nHemos recibido la ficha de tu " +
+          titular.toLowerCase() +
+          ". La revisaremos y te contactaremos en el email o teléfono que nos has dejado " +
+          "para confirmar la publicación. Recuerda que no se publica de forma automática.\n\n" +
+          "Gracias por confiar en Inmobiliaria Sanz.\n976 000 000 · hola@inmobiliariasanz.es",
       })
         .then(exito)
         .catch(function (e2) {

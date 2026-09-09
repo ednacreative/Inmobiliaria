@@ -111,6 +111,13 @@ sin backend. El destinatario está en `js/forms.js` (constante `DESTINO`):
 Para reducir spam, tras activar se puede sustituir el email en `js/forms.js` por
 la cadena aleatoria (`/ajax/<hash>`) que FormSubmit facilita en su panel.
 
+**Estilo de los correos:** se usa la plantilla `box` de FormSubmit (tarjeta con
+los campos en tabla y asunto con emoji), se fija `_replyto` para que al
+responder el correo vaya directo a quien rellenó el formulario, y se envía un
+`_autoresponse` (acuse automático) a esa persona. FormSubmit **no permite
+plantillas HTML propias** en su plan gratuito; para un diseño de email a medida
+haría falta un servicio como Resend, Postmark o un backend propio.
+
 El formulario de "Publica tu inmueble" es una **solicitud**: no publica nada en el
 listado. Al recibir el correo, revisa el inmueble y publícalo manualmente
 (añadiéndolo a `data/propiedades.json`) o contacta con la persona con los datos

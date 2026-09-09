@@ -8,6 +8,11 @@
 
    Para reducir spam, tras activar se puede sustituir el email por la
    cadena aleatoria que FormSubmit facilita (endpoint /ajax/<hash>).
+
+   Estilo del email: se usa la plantilla "box" de FormSubmit (tarjeta con
+   los campos en tabla). Además se envía _replyto (responder va al remitente)
+   y _autoresponse (acuse automático al remitente). FormSubmit no admite
+   plantillas HTML propias en su plan gratuito.
    ============================================================ */
 
 window.InmoForms = (function () {
@@ -17,8 +22,13 @@ window.InmoForms = (function () {
   var ENDPOINT = "https://formsubmit.co/ajax/" + encodeURIComponent(DESTINO);
 
   /**
-   * datos: objeto plano { campo: valor }
-   * opciones: { asunto: "..." }
+   * datos: objeto plano { campo: valor } — el orden se respeta en el email.
+   * opciones: {
+   *   asunto: "...",              // _subject
+   *   replyTo: "correo@…",        // _replyto: responder va directo al remitente
+   *   autorespuesta: "texto",     // _autoresponse: acuse automático al remitente
+   *   plantilla: "box" | "table" | "basic"   // _template (por defecto "box")
+   * }
    * Devuelve una promesa que resuelve si el envío se aceptó y rechaza
    * (con Error.message legible) si no.
    */
@@ -35,7 +45,14 @@ window.InmoForms = (function () {
       );
     }
 
-    var cuerpo = { _subject: opciones.asunto || "Nuevo mensaje desde la web", _template: "table", _captcha: "false" };
+    var cuerpo = {
+      _subject: opciones.asunto || "Nuevo mensaje desde la web · Inmobiliaria Sanz",
+      _template: opciones.plantilla || "box",
+      _captcha: "false",
+    };
+    if (opciones.replyTo) cuerpo._replyto = opciones.replyTo;
+    if (opciones.autorespuesta) cuerpo._autoresponse = opciones.autorespuesta;
+
     Object.keys(datos).forEach(function (k) {
       cuerpo[k] = datos[k];
     });
