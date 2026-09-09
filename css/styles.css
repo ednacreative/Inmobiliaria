@@ -329,19 +329,25 @@ p {
 
 .hero__inner {
   padding: clamp(3rem, 7vw, 5rem) 0 clamp(3rem, 6vw, 4.5rem);
+  text-align: center;
 }
 
 .hero h1 {
   color: #fff;
-  margin-bottom: 0.6rem;
-  max-width: 24ch;
+  margin: 0 auto 0.6rem;
+  max-width: 22ch;
 }
 
 .hero__inner > p {
   font-size: 1.1rem;
   color: #dbe4ee;
-  max-width: 46ch;
-  margin-bottom: 0;
+  max-width: 52ch;
+  margin: 0 auto;
+}
+
+/* El buscador mantiene sus etiquetas alineadas a la izquierda */
+.hero .buscador {
+  text-align: left;
 }
 
 /* El buscador ocupa todo el ancho del contenedor (igual que la sección
