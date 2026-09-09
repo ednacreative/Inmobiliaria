@@ -328,18 +328,30 @@ p {
 }
 
 .hero__inner {
-  padding: clamp(3.5rem, 9vw, 7rem) 0 clamp(4rem, 8vw, 6rem);
-  max-width: 720px;
+  padding: clamp(3rem, 7vw, 5rem) 0 clamp(2.5rem, 5vw, 3.5rem);
 }
 
 .hero h1 {
   color: #fff;
   margin-bottom: 0.6rem;
+  max-width: 24ch;
 }
 
-.hero p {
+.hero__inner > p {
   font-size: 1.1rem;
   color: #dbe4ee;
+  max-width: 46ch;
+  margin-bottom: 0;
+}
+
+/* El buscador va justo debajo del texto, alineado con él */
+.hero .buscador {
+  margin-top: 1.6rem;
+  margin-bottom: -2.5rem;
+}
+
+#destacados {
+  padding-top: 4.5rem;
 }
 
 /* ---------- Buscador ---------- */
