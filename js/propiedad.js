@@ -114,23 +114,24 @@
         p.ubicacion.barrio +
         ", " +
         p.ubicacion.ciudad +
-        " (" +
-        p.ubicacion.cp +
-        ")</p></div>" +
-        '<div><div class="ficha__precio">' +
+        (p.ubicacion.cp ? " (" + p.ubicacion.cp + ")" : "") +
+        "</p></div>" +
+        '<div class="ficha__precio-bloque"><div class="ficha__precio">' +
         Inmo.precio(p) +
         "</div><span class=\"insignia insignia--" +
         p.operacion +
         '">' +
         Inmo.etiquetaOperacion(p.operacion) +
-        "</span></div>" +
+        "</span>" +
+        (window.InmoFav ? window.InmoFav.boton(p.id, { grande: true }) : "") +
+        "</div>" +
         "</div>" +
         '<div class="galeria">' +
         galeria +
         "</div>" +
-        '<button type="button" id="ver-fotos" class="btn btn--linea" style="margin:-0.8rem 0 2rem">Ver las ' +
-        p.imagenes.length +
-        " fotos</button>" +
+        '<button type="button" id="ver-fotos" class="btn btn--linea" style="margin:-0.8rem 0 2rem">' +
+        (p.imagenes.length === 1 ? "Ver la foto" : "Ver las " + p.imagenes.length + " fotos") +
+        "</button>" +
         '<div class="ficha__cols">' +
         "<div>" +
         "<h2>Características</h2>" +

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi perfil · Inmobiliaria Sanz</title>
+  <meta name="description" content="Tu perfil y tus datos guardados en Inmobiliaria Sanz.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-cabecera></header>
+
+  <div class="encabezado-pagina">
+    <div class="contenedor">
+      <h1>Mi perfil</h1>
+      <p>Tus datos y preferencias de búsqueda. Se guardan en este navegador.</p>
+    </div>
+  </div>
+
+  <main class="seccion">
+    <div class="contenedor" style="max-width:720px" id="perfil-contenido">
+      <div class="cargando">Cargando…</div>
+    </div>
+  </main>
+
+  <footer data-pie></footer>
+
+  <script src="data/propiedades.js"></script>
+  <script src="js/sesion.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script>
+    (function () {
+      var cont = document.getElementById("perfil-contenido");
+      var CLAVE = "inmo_perfil";
+
+      function datos() {
+        try { return JSON.parse(localStorage.getItem(CLAVE) || "{}"); } catch (e) { return {}; }
+      }
+
+      function render() {
+        var s = InmoSesion.actual();
+        if (!s) {
+          cont.innerHTML =
+            '<div class="aviso-form">Inicia sesión para ver y editar tu perfil.</div>' +
+            '<button class="btn btn--primario" data-accion="entrar" style="margin-top:1rem">Iniciar sesión</button>';
+          return;
+        }
+        var d = datos();
+        var favN = InmoFav.total();
+        cont.innerHTML =
+          '<div class="tarjeta-info" style="margin-bottom:1.5rem">' +
+            '<h3 style="margin-bottom:.3rem">' + esc(s.nombre) + '</h3>' +
+            '<p class="texto-apoyo" style="margin:0">' + (s.email ? esc(s.email) + ' · ' : '') +
+            (s.rol === 'admin' ? 'Administrador' : 'Cliente') + '</p>' +
+            '<p style="margin:.8rem 0 0"><a href="favoritos.html">Mis favoritos (' + favN + ')</a></p>' +
+          '</div>' +
+          '<h2>Mis datos</h2>' +
+          '<p class="texto-apoyo">Los usamos para autocompletar los formularios de contacto y ajustar tus búsquedas.</p>' +
+          '<form id="form-perfil">' +
+            campo('nombre', 'Nombre y apellidos', d.nombre || s.nombre || '') +
+            campo('telefono', 'Teléfono', d.telefono || '') +
+            campo('email', 'Email', d.email || s.email || '', 'email') +
+            '<div class="form-campo"><label for="pf-op">Me interesa</label><select id="pf-op" name="operacion">' +
+              opt('', 'Comprar o alquilar', d.operacion) + opt('venta', 'Comprar', d.operacion) + opt('alquiler', 'Alquilar', d.operacion) +
+            '</select></div>' +
+            campo('zona', 'Zona preferida', d.zona || '') +
+            campo('precioMax', 'Presupuesto máximo (€)', d.precioMax || '', 'number') +
+            '<button class="btn btn--primario" type="submit">Guardar datos</button>' +
+            '<span id="pf-ok" class="pill oculto" style="margin-left:.8rem;background:var(--verde);color:#fff">Guardado ✓</span>' +
+          '</form>';
+
+        document.getElementById("form-perfil").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var f = e.target;
+          var nuevo = {
+            nombre: f.nombre.value, telefono: f.telefono.value, email: f.email.value,
+            operacion: f.operacion.value, zona: f.zona.value, precioMax: f.precioMax.value
+          };
+          try { localStorage.setItem(CLAVE, JSON.stringify(nuevo)); } catch (e2) {}
+          var ok = document.getElementById("pf-ok");
+          ok.classList.remove("oculto");
+          setTimeout(function () { ok.classList.add("oculto"); }, 2500);
+        });
+      }
+
+      function campo(name, label, val, tipo) {
+        return '<div class="form-campo"><label for="pf-' + name + '">' + label + '</label>' +
+          '<input id="pf-' + name + '" name="' + name + '" type="' + (tipo || 'text') + '" value="' + esc(val) + '"></div>';
+      }
+      function opt(v, t, sel) {
+        return '<option value="' + v + '"' + (String(sel || '') === v ? ' selected' : '') + '>' + t + '</option>';
+      }
+      function esc(s) {
+        return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+        });
+      }
+
+      render();
+      window.addEventListener("inmo:sesion", render);
+    })();
+  </script>
+</body>
+</html>

@@ -8,6 +8,47 @@ window.Inmo = (function () {
 
   var cache = null;
 
+  /* ---------- Overlay del administrador (DEMO, localStorage) ----------
+     El panel de administración guarda aquí los inmuebles añadidos, las
+     ediciones y los ocultados. Se fusiona sobre la BBDD base al leer, así
+     los cambios del admin se ven en listados, mapa y fichas (en ese
+     navegador). En la Fase 2 esto lo sustituye la base de datos real. */
+  var OV_CLAVE = "inmo_admin_overlay";
+
+  function overlayLeer() {
+    try {
+      var o = JSON.parse(localStorage.getItem(OV_CLAVE) || "{}");
+      return {
+        anadidos: Array.isArray(o.anadidos) ? o.anadidos : [],
+        editados: o.editados && typeof o.editados === "object" ? o.editados : {},
+        ocultos: Array.isArray(o.ocultos) ? o.ocultos : [],
+      };
+    } catch (e) {
+      return { anadidos: [], editados: {}, ocultos: [] };
+    }
+  }
+
+  function overlayGuardar(ov) {
+    try {
+      localStorage.setItem(OV_CLAVE, JSON.stringify(ov));
+    } catch (e) {}
+  }
+
+  function aplicarOverlay(lista) {
+    var ov = overlayLeer();
+    var res = lista
+      .filter(function (p) {
+        return ov.ocultos.indexOf(p.id) === -1;
+      })
+      .map(function (p) {
+        return ov.editados[p.id]
+          ? Object.assign({}, p, ov.editados[p.id])
+          : p;
+      });
+    // Los añadidos van primero (los más nuevos arriba).
+    return ov.anadidos.concat(res);
+  }
+
   /**
    * Devuelve una promesa con el objeto completo de la BBDD:
    * { agencia, propiedades: [...] , total, ... }
@@ -39,7 +80,13 @@ window.Inmo = (function () {
 
   function propiedades() {
     return cargar().then(function (db) {
-      return db.propiedades || [];
+      return aplicarOverlay(db.propiedades || []);
+    });
+  }
+
+  function propiedadesBase() {
+    return cargar().then(function (db) {
+      return (db.propiedades || []).slice();
     });
   }
 
@@ -188,9 +235,12 @@ window.Inmo = (function () {
       spec("bano", c.banos + (c.banos === 1 ? " baño" : " baños")) +
       spec("escalera", c.planta_texto);
 
+    var favBtn = window.InmoFav ? window.InmoFav.boton(p.id) : "";
+
     return (
       '<article class="tarjeta">' +
-      '<a class="tarjeta__media" href="propiedad.html?id=' +
+      '<div class="tarjeta__media">' +
+      '<a href="propiedad.html?id=' +
       encodeURIComponent(p.id) +
       '" aria-label="' +
       p.titulo +
@@ -200,6 +250,7 @@ window.Inmo = (function () {
       '" alt="' +
       p.titulo +
       '" loading="lazy" width="600" height="450">' +
+      "</a>" +
       '<span class="tarjeta__insignias">' +
       '<span class="insignia insignia--' +
       p.operacion +
@@ -209,10 +260,11 @@ window.Inmo = (function () {
       destacadoInsignia +
       estadoInsignia +
       "</span>" +
+      favBtn +
       '<span class="tarjeta__precio">' +
       precio(p) +
       "</span>" +
-      "</a>" +
+      "</div>" +
       '<div class="tarjeta__cuerpo">' +
       '<h3 class="tarjeta__titulo"><a href="propiedad.html?id=' +
       encodeURIComponent(p.id) +
@@ -261,7 +313,10 @@ window.Inmo = (function () {
   return {
     cargar: cargar,
     propiedades: propiedades,
+    propiedadesBase: propiedadesBase,
     porId: porId,
+    overlayLeer: overlayLeer,
+    overlayGuardar: overlayGuardar,
     euros: euros,
     precio: precio,
     etiquetaOperacion: etiquetaOperacion,

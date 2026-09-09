@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis favoritos · Inmobiliaria Sanz</title>
+  <meta name="description" content="Tus viviendas guardadas en Inmobiliaria Sanz.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-cabecera></header>
+
+  <div class="encabezado-pagina">
+    <div class="contenedor">
+      <h1>Mis favoritos</h1>
+      <p>Las viviendas que has guardado. Se conservan en este navegador.</p>
+    </div>
+  </div>
+
+  <main class="seccion">
+    <div class="contenedor">
+      <div class="rejilla" id="fav-grid"><div class="cargando">Cargando…</div></div>
+      <div id="fav-vacio" class="sin-resultados oculto">
+        <h3>Todavía no tienes favoritos</h3>
+        <p>Pulsa el corazón ❤️ en cualquier vivienda para guardarla aquí.</p>
+        <a class="btn btn--primario" href="venta.html">Ver viviendas en venta</a>
+      </div>
+    </div>
+  </main>
+
+  <footer data-pie></footer>
+
+  <script src="data/propiedades.js"></script>
+  <script src="js/sesion.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script>
+    (function () {
+      var grid = document.getElementById("fav-grid");
+      var vacio = document.getElementById("fav-vacio");
+
+      function pintar() {
+        Inmo.propiedades().then(function (lista) {
+          var ids = InmoFav.lista();
+          var favs = lista.filter(function (p) {
+            return ids.indexOf(p.id) !== -1;
+          });
+          if (!favs.length) {
+            grid.innerHTML = "";
+            grid.classList.add("oculto");
+            vacio.classList.remove("oculto");
+            return;
+          }
+          grid.classList.remove("oculto");
+          vacio.classList.add("oculto");
+          grid.innerHTML = favs.map(Inmo.tarjeta).join("");
+        });
+      }
+
+      pintar();
+      window.addEventListener("inmo:favoritos", pintar);
+    })();
+  </script>
+</body>
+</html>
