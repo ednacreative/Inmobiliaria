@@ -118,10 +118,12 @@ responder el correo vaya directo a quien rellenó el formulario, y se envía un
 plantillas HTML propias** en su plan gratuito; para un diseño de email a medida
 haría falta un servicio como Resend, Postmark o un backend propio.
 
-El formulario de "Publica tu inmueble" es una **solicitud**: no publica nada en el
-listado. Al recibir el correo, revisa el inmueble y publícalo manualmente
-(añadiéndolo a `data/propiedades.json`) o contacta con la persona con los datos
-que ha dejado.
+El formulario de "Solicitar valoración" (`publica.html`) es una **solicitud**: no
+publica nada en el listado. Al recibir el correo, revisa el inmueble y publícalo
+manualmente (añadiéndolo a `data/propiedades.json`) o contacta con la persona con
+los datos que ha dejado. Sus campos van numerados (`01.`, `02.`, …) para que la
+tabla del email respete **el mismo orden que el formulario** aunque FormSubmit
+reordene los campos.
 
 ## Pendiente / ideas
 

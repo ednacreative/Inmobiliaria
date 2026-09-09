@@ -13,36 +13,38 @@
     var ok = document.getElementById("publica-ok");
     var err = document.getElementById("publica-error");
 
-    // name -> etiqueta legible en el email
+    // name -> etiqueta en el email. El prefijo numérico (01., 02., …) fuerza
+    // que la tabla del correo salga EN EL MISMO ORDEN que el formulario,
+    // aunque FormSubmit reordene los campos.
     var ETIQUETAS = {
-      operacion: "Operación",
-      tipo: "Tipo de inmueble",
-      precio: "Precio",
-      estado_conservacion: "Estado de conservación",
-      direccion: "Dirección",
-      barrio: "Barrio / zona",
-      ciudad: "Ciudad",
-      cp: "Código postal",
-      m2_construidos: "Superficie construida (m²)",
-      m2_utiles: "Superficie útil (m²)",
-      habitaciones: "Habitaciones",
-      banos: "Baños",
-      planta: "Planta",
-      ano_construccion: "Año de construcción",
-      certificado_energetico: "Certificado energético",
-      orientacion: "Orientación",
-      gastos_comunidad_mes: "Gastos de comunidad (€/mes)",
-      m2_terraza: "Superficie de terraza (m²)",
-      ascensor: "Ascensor",
-      garaje: "Garaje",
-      trastero: "Trastero",
-      terraza: "Terraza",
-      descripcion: "Descripción",
-      extras: "Equipamiento y extras",
-      fotos_enlace: "Enlace a las fotos",
-      contacto_nombre: "Contacto · Nombre",
-      contacto_telefono: "Contacto · Teléfono",
-      contacto_email: "Contacto · Email",
+      operacion: "01. Operación",
+      tipo: "02. Tipo de inmueble",
+      precio: "03. Precio",
+      estado_conservacion: "04. Estado de conservación",
+      direccion: "05. Dirección",
+      barrio: "06. Barrio / zona",
+      ciudad: "07. Ciudad",
+      cp: "08. Código postal",
+      m2_construidos: "09. Superficie construida (m²)",
+      m2_utiles: "10. Superficie útil (m²)",
+      habitaciones: "11. Habitaciones",
+      banos: "12. Baños",
+      planta: "13. Planta",
+      ano_construccion: "14. Año de construcción",
+      certificado_energetico: "15. Certificado energético",
+      orientacion: "16. Orientación",
+      gastos_comunidad_mes: "17. Gastos de comunidad (€/mes)",
+      m2_terraza: "18. Superficie de terraza (m²)",
+      ascensor: "19. Ascensor",
+      garaje: "20. Garaje",
+      trastero: "21. Trastero",
+      terraza: "22. Terraza",
+      descripcion: "23. Descripción",
+      extras: "24. Equipamiento y extras",
+      fotos_enlace: "25. Enlace a las fotos",
+      contacto_nombre: "26. Contacto · Nombre y apellidos",
+      contacto_telefono: "27. Contacto · Teléfono",
+      contacto_email: "28. Contacto · Email",
     };
 
     var CHECKS = ["ascensor", "garaje", "trastero", "terraza"];
@@ -99,6 +101,7 @@
 
       window.InmoForms.enviar(datos, {
         asunto: "🏠 Nuevo inmueble para revisar: " + titular,
+        plantilla: "table",
         replyTo: f.elements.contacto_email.value,
         autorespuesta:
           "Hola " +
