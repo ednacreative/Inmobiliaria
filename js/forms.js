@@ -24,6 +24,17 @@ window.InmoForms = (function () {
    */
   function enviar(datos, opciones) {
     opciones = opciones || {};
+
+    // FormSubmit rechaza las peticiones desde file:// (Origin nulo).
+    if (location.protocol === "file:") {
+      return Promise.reject(
+        new Error(
+          "El envío de formularios no funciona abriendo el archivo con doble clic. " +
+            "Usa la web publicada o sírvela en local con «npm run dev»."
+        )
+      );
+    }
+
     var cuerpo = { _subject: opciones.asunto || "Nuevo mensaje desde la web", _template: "table", _captcha: "false" };
     Object.keys(datos).forEach(function (k) {
       cuerpo[k] = datos[k];

@@ -54,8 +54,10 @@ Sitio **estático**, sin framework ni build obligatorio:
 
 ## Uso en local
 
-Abrir `index.html` con doble clic ya funciona (gracias a `data/propiedades.js`).
-Para un entorno más fiel al de producción, sirve la carpeta por HTTP:
+Abrir `index.html` con doble clic ya funciona para navegar (gracias a
+`data/propiedades.js`), **pero los formularios NO se envían desde `file://`**
+(FormSubmit rechaza el origen nulo). Para probar los formularios usa la web
+publicada o sirve la carpeta por HTTP:
 
 ```bash
 npm run dev        # abre http://localhost:3000  (usa npx serve)
