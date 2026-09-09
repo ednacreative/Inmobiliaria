@@ -39,7 +39,7 @@
       '<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>' +
       '<nav class="nav" id="nav-principal">' +
       enlaces +
-      '<a class="btn btn--primario nav__cta" href="publica.html">Publica tu inmueble</a>' +
+      '<a class="btn btn--primario nav__cta" href="publica.html">Solicitar valoración</a>' +
       "</nav>" +
       "</div>"
     );
@@ -65,7 +65,7 @@
       "<div><h4>Agencia</h4><ul>" +
       '<li><a href="nosotros.html">Sobre nosotros</a></li>' +
       '<li><a href="informacion.html">Guías y trámites</a></li>' +
-      '<li><a href="publica.html">Publica tu inmueble</a></li>' +
+      '<li><a href="publica.html">Solicitar valoración</a></li>' +
       '<li><a href="contacto.html">Contacto</a></li>' +
       "</ul></div>" +
       "<div><h4>Contacto</h4><ul>" +

@@ -74,7 +74,7 @@
 
       var fin = function () {
         btn.disabled = false;
-        btn.textContent = "Enviar inmueble para revisión";
+        btn.textContent = "Solicitar valoración gratuita";
       };
 
       var exito = function () {
