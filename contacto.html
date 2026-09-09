@@ -95,12 +95,15 @@
           btn.disabled = true;
           btn.textContent = "Enviando…";
           err.classList.add("oculto");
+          var motivo = MOTIVOS[f.motivo.value] || f.motivo.value;
+          // Prefijo numérico (01., 02., …) para que la tabla del email salga
+          // en el mismo orden que el formulario, aunque FormSubmit reordene.
           var datos = {
-            "Tipo de mensaje": MOTIVOS[f.motivo.value] || f.motivo.value,
-            Nombre: f.nombre.value,
-            Email: f.email.value,
-            Teléfono: f.telefono.value || "(no indicado)",
-            Mensaje: f.mensaje.value,
+            "01. Nombre y apellidos": f.nombre.value,
+            "02. Email": f.email.value,
+            "03. Teléfono": f.telefono.value || "(no indicado)",
+            "04. Motivo": motivo,
+            "05. Mensaje": f.mensaje.value,
           };
           var fin = function () {
             btn.disabled = false;
@@ -113,7 +116,8 @@
             return;
           }
           window.InmoForms.enviar(datos, {
-            asunto: "✉️ Contacto web — " + datos["Tipo de mensaje"],
+            asunto: "✉️ Contacto web — " + motivo,
+            plantilla: "table",
             replyTo: f.email.value,
             autorespuesta:
               "Hola " + f.nombre.value + ",\n\n" +
