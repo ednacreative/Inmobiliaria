@@ -52,9 +52,15 @@ window.InmoForms = (function () {
         })
         .then(function (j) {
           if (r.ok && j && String(j.success) === "true") return j;
-          var msg =
-            (j && j.message) ||
-            "No se ha podido enviar el formulario en este momento.";
+          var original = (j && j.message) || "";
+          var msg = original || "No se ha podido enviar el formulario en este momento.";
+          if (/activat/i.test(original)) {
+            msg =
+              "Este formulario está pendiente de activar. Se ha enviado un correo " +
+              'con un enlace "Activate Form" a ' +
+              DESTINO +
+              " (revisa también spam). Al pulsarlo, el formulario quedará operativo.";
+          }
           throw new Error(msg);
         });
     });
