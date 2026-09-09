@@ -48,6 +48,7 @@
           <button class="btn btn--primario btn--bloque" type="submit">Enviar mensaje</button>
         </form>
         <div id="contacto-ok" class="aviso-form oculto"><strong>¡Mensaje enviado!</strong><br>Gracias por escribirnos. Te contactamos en breve.</div>
+        <div id="contacto-error" class="aviso-form aviso-error oculto"></div>
       </div>
 
       <div>
@@ -73,17 +74,61 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="data/propiedades.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/forms.js"></script>
   <script src="js/layout.js"></script>
   <script>
     (function () {
       var f = document.getElementById("form-contacto");
       var ok = document.getElementById("contacto-ok");
+      var err = document.getElementById("contacto-error");
+      var MOTIVOS = {
+        comprar: "Quiero comprar",
+        alquilar: "Quiero alquilar",
+        vender: "Quiero vender mi vivienda",
+        "poner-alquiler": "Quiero poner mi vivienda en alquiler",
+        otro: "Otro",
+      };
       if (f) {
         f.addEventListener("submit", function (e) {
           e.preventDefault();
-          f.classList.add("oculto");
-          ok.classList.remove("oculto");
-          window.scrollTo({ top: ok.getBoundingClientRect().top + window.scrollY - 120, behavior: "smooth" });
+          var btn = f.querySelector('button[type="submit"]');
+          btn.disabled = true;
+          btn.textContent = "Enviando…";
+          err.classList.add("oculto");
+          var datos = {
+            Nombre: f.nombre.value,
+            Email: f.email.value,
+            Teléfono: f.telefono.value || "(no indicado)",
+            Motivo: MOTIVOS[f.motivo.value] || f.motivo.value,
+            Mensaje: f.mensaje.value,
+          };
+          var fin = function () {
+            btn.disabled = false;
+            btn.textContent = "Enviar mensaje";
+          };
+          if (!window.InmoForms) {
+            fin();
+            f.classList.add("oculto");
+            ok.classList.remove("oculto");
+            return;
+          }
+          window.InmoForms.enviar(datos, { asunto: "Contacto web — " + datos.Motivo })
+            .then(function () {
+              f.classList.add("oculto");
+              ok.classList.remove("oculto");
+              window.scrollTo({
+                top: ok.getBoundingClientRect().top + window.scrollY - 120,
+                behavior: "smooth",
+              });
+            })
+            .catch(function (e2) {
+              fin();
+              err.innerHTML =
+                "<strong>No se ha podido enviar.</strong><br>" +
+                (e2 && e2.message ? e2.message + "<br>" : "") +
+                'Escríbenos a <a href="mailto:hola@inmobiliariasanz.es">hola@inmobiliariasanz.es</a> o llámanos al 976 000 000.';
+              err.classList.remove("oculto");
+            });
         });
       }
       if (typeof L !== "undefined") {

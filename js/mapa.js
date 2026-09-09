@@ -158,8 +158,8 @@
         : '<p class="texto-apoyo">Sin resultados con esos filtros.</p>';
 
       listaEl.querySelectorAll(".mini-tarjeta").forEach(function (el) {
+        var id = el.getAttribute("data-id");
         el.addEventListener("click", function () {
-          var id = el.getAttribute("data-id");
           var m = marcadoresPorId[id];
           if (m) {
             mapa.setView(m.getLatLng(), 15, { animate: true });
@@ -169,6 +169,13 @@
             x.classList.remove("activa");
           });
           el.classList.add("activa");
+        });
+        // Resaltar el marcador correspondiente al pasar el ratón por el listado.
+        el.addEventListener("mouseenter", function () {
+          resaltarMarcador(id, true);
+        });
+        el.addEventListener("mouseleave", function () {
+          resaltarMarcador(id, false);
         });
       });
 
@@ -190,6 +197,14 @@
         if (c[k]) query[k] = c[k];
       });
       Inmo.escribirQuery(query);
+    }
+
+    function resaltarMarcador(id, on) {
+      var m = marcadoresPorId[id];
+      if (!m || !m._icon) return;
+      var pin = m._icon.querySelector(".pin-precio");
+      if (pin) pin.classList.toggle("activo", on);
+      m.setZIndexOffset(on ? 1000 : 0);
     }
 
     form.addEventListener("input", actualizar);

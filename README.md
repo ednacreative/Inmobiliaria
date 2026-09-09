@@ -16,9 +16,10 @@ Sitio **estático**, sin framework ni build obligatorio:
 - [Leaflet](https://leafletjs.com/) vía CDN para los mapas (tiles de OpenStreetMap).
 - "Base de datos" de propiedades en `data/propiedades.json` (+ copia `data/propiedades.js`
   para poder abrir la web sin servidor).
-- Imágenes de ejemplo: interiores de vivienda desde `loremflickr.com` (con
-  respaldo automático a `picsum.photos` si algún recurso falla) y retratos del
-  equipo desde `pravatar.cc`.
+- Imágenes de ejemplo: fotos de interiores de vivienda desde `images.unsplash.com`
+  (pool `FOTOS_INTERIOR` en `scripts/generar-datos.mjs`), con respaldo automático
+  a `picsum.photos` si algún recurso falla, y retratos del equipo desde `pravatar.cc`.
+- Envío de formularios por email con [FormSubmit](https://formsubmit.co) (sin backend).
 - Ciudad de referencia del prototipo: **Zaragoza** (barrios y coordenadas reales).
 
 ## Estructura
@@ -29,17 +30,20 @@ Sitio **estático**, sin framework ni build obligatorio:
 ├── alquiler.html       Listado filtrable — operación fijada a "alquiler"
 ├── propiedad.html      Ficha de detalle (usa ?id=SANZ-XXXX)
 ├── mapa.html           Mapa a pantalla completa + lista lateral sincronizada
+├── publica.html        "Publica tu inmueble": formulario para dar de alta una vivienda
 ├── nosotros.html       Sobre nosotros / equipo
 ├── informacion.html    Guías y trámites + FAQ
 ├── contacto.html       Formulario + datos + mapa de la oficina
 ├── css/styles.css
 ├── js/
-│   ├── layout.js       Inserta cabecera y pie comunes; menú móvil
+│   ├── layout.js       Inserta cabecera y pie comunes; menú móvil; respaldo de imágenes
 │   ├── data.js         Carga de la BBDD + filtros, formato y tarjeta de propiedad
+│   ├── forms.js         Envío de formularios por email (FormSubmit)
 │   ├── home.js          Portada
 │   ├── listado.js       Páginas de venta / alquiler
-│   ├── propiedad.js     Ficha de detalle
-│   └── mapa.js          Página de mapa
+│   ├── propiedad.js     Ficha de detalle + carrusel de fotos
+│   ├── mapa.js          Página de mapa (marcadores + resaltado al pasar el ratón)
+│   └── publica.js       Formulario "Publica tu inmueble"
 ├── data/
 │   ├── propiedades.json  Base de datos (fuente de la verdad)
 │   └── propiedades.js    Copia autogenerada (window.INMO_DB) para uso sin servidor
@@ -90,10 +94,31 @@ Al hacer `push` a `main`, el workflow `deploy-pages.yml` publica el sitio en
 
 Quedará en `https://<usuario>.github.io/<repositorio>/`.
 
+## Formularios por email (FormSubmit)
+
+Los formularios de **Contacto**, **solicitud de visita** (ficha de propiedad) y
+**Publica tu inmueble** envían un correo con [FormSubmit](https://formsubmit.co),
+sin backend. El destinatario está en `js/forms.js` (constante `DESTINO`):
+`edna.creativestudio@gmail.com`.
+
+> **Activación (una sola vez):** el primer envío de cualquier formulario hace que
+> FormSubmit mande un correo de confirmación a esa dirección. Hay que abrirlo y
+> pulsar **"Activate Form"**. A partir de ahí llegan todos los envíos.
+> Los envíos hechos antes de activar **no se reenvían**.
+
+Para reducir spam, tras activar se puede sustituir el email en `js/forms.js` por
+la cadena aleatoria (`/ajax/<hash>`) que FormSubmit facilita en su panel.
+
+El formulario de "Publica tu inmueble" es una **solicitud**: no publica nada en el
+listado. Al recibir el correo, revisa el inmueble y publícalo manualmente
+(añadiéndolo a `data/propiedades.json`) o contacta con la persona con los datos
+que ha dejado.
+
 ## Pendiente / ideas
 
 - Sustituir textos, datos de contacto y nombre real de la agencia.
 - Fotos reales de las viviendas y del equipo.
-- Conectar el formulario a un servicio real (Formspree, Getform, backend propio…).
+- Activar el formulario en FormSubmit (ver arriba) o migrar a backend propio.
+- Panel para convertir una solicitud de "Publica tu inmueble" en ficha publicada.
 - Añadir favoritos (localStorage) y comparador de viviendas.
 - Aviso de cookies / textos legales reales.

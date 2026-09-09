@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-09T00:04:27.081Z",
+  "generado": "2026-09-09T07:31:38.442Z",
   "fuente": "datos ficticios — generar-datos.mjs",
   "agencia": {
     "nombre": "Inmobiliaria Sanz",
@@ -66,13 +66,13 @@
       ],
       "descripcion": "Piso de 84 m² construidos (70 m² útiles) situado en Paseo de Sagasta, 138, en el distrito de Universidad. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 10 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=31090",
-        "https://loremflickr.com/1200/800/living-room?lock=53471",
-        "https://loremflickr.com/1200/800/kitchen?lock=75852",
-        "https://loremflickr.com/1200/800/bedroom?lock=98233",
-        "https://loremflickr.com/1200/800/bathroom?lock=20614"
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=31090",
+      "imagen_principal": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-09-15"
     },
     {
@@ -126,14 +126,14 @@
       ],
       "descripcion": "Loft de 86 m² construidos (74 m² útiles) situado en Calle de León XIII, 134, en el distrito de Santa Isabel. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. Cuenta con una terraza de 11 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=36762",
-        "https://loremflickr.com/1200/800/living-room?lock=59143",
-        "https://loremflickr.com/1200/800/kitchen?lock=81524",
-        "https://loremflickr.com/1200/800/bedroom?lock=3905",
-        "https://loremflickr.com/1200/800/bathroom?lock=26286",
-        "https://loremflickr.com/1200/800/apartment,hallway?lock=48667"
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=36762",
+      "imagen_principal": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-08-22"
     },
     {
@@ -189,14 +189,14 @@
       ],
       "descripcion": "Piso de 52 m² construidos (47 m² útiles) situado en Calle del Coso, 166, en el distrito de Actur-Rey Fernando. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=32057",
-        "https://loremflickr.com/1200/800/living-room?lock=99200",
-        "https://loremflickr.com/1200/800/kitchen?lock=76819",
-        "https://loremflickr.com/1200/800/bedroom?lock=64914",
-        "https://loremflickr.com/1200/800/bathroom?lock=42533",
-        "https://loremflickr.com/1200/800/apartment,hallway?lock=9676"
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=32057",
+      "imagen_principal": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-08-06"
     },
     {
@@ -251,13 +251,13 @@
       ],
       "descripcion": "Piso de 109 m² construidos (90 m² útiles) situado en Avenida de César Augusto, 20, en el distrito de El Rabal (Arrabal). La vivienda se distribuye en 3 dormitorios y 1 baño, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=63167",
-        "https://loremflickr.com/1200/800/living-room?lock=40786",
-        "https://loremflickr.com/1200/800/kitchen?lock=18405",
-        "https://loremflickr.com/1200/800/bedroom?lock=75072",
-        "https://loremflickr.com/1200/800/bathroom?lock=52691"
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=63167",
+      "imagen_principal": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-08-03"
     },
     {
@@ -313,13 +313,13 @@
       ],
       "descripcion": "Piso de 75 m² construidos (69 m² útiles) situado en Avenida de Valencia, 21, en el distrito de Oliver-Valdefierro. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=84778",
-        "https://loremflickr.com/1200/800/living-room?lock=7159",
-        "https://loremflickr.com/1200/800/kitchen?lock=29540",
-        "https://loremflickr.com/1200/800/bedroom?lock=51921",
-        "https://loremflickr.com/1200/800/bathroom?lock=74302"
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=84778",
+      "imagen_principal": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-07-26"
     },
     {
@@ -373,14 +373,14 @@
       ],
       "descripcion": "Dúplex de 162 m² construidos (139 m² útiles) situado en Paseo de Sagasta, 176, en el distrito de Las Fuentes. La vivienda se distribuye en 5 dormitorios y 3 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=23383",
-        "https://loremflickr.com/1200/800/living-room?lock=1002",
-        "https://loremflickr.com/1200/800/kitchen?lock=78621",
-        "https://loremflickr.com/1200/800/bedroom?lock=35288",
-        "https://loremflickr.com/1200/800/bathroom?lock=12907",
-        "https://loremflickr.com/1200/800/apartment,hallway?lock=90526"
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=23383",
+      "imagen_principal": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-05-24"
     },
     {
@@ -437,13 +437,13 @@
       ],
       "descripcion": "Casa de 272 m² construidos (228 m² útiles) situado en Calle de Miguel Servet, 103, en el distrito de Casco Histórico. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación noreste y una luminosidad excelente durante todo el día. Cuenta con una terraza de 11 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=61046",
-        "https://loremflickr.com/1200/800/living-room?lock=83427",
-        "https://loremflickr.com/1200/800/kitchen?lock=5808",
-        "https://loremflickr.com/1200/800/bedroom?lock=49141",
-        "https://loremflickr.com/1200/800/bathroom?lock=71522"
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=61046",
+      "imagen_principal": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-04-10"
     },
     {
@@ -496,12 +496,12 @@
       ],
       "descripcion": "Piso de 108 m² construidos (89 m² útiles) situado en Calle de Bretón, 97, en el distrito de Casablanca. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación noreste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=9204",
-        "https://loremflickr.com/1200/800/living-room?lock=42061",
-        "https://loremflickr.com/1200/800/kitchen?lock=64442",
-        "https://loremflickr.com/1200/800/bedroom?lock=76347"
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=9204",
+      "imagen_principal": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-04-01"
     },
     {
@@ -559,14 +559,14 @@
       ],
       "descripcion": "Ático de 67 m² construidos (56 m² útiles) situado en Calle de Don Jaime I, 56, en el distrito de Casablanca. La vivienda se distribuye en 4 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 34 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=58023",
-        "https://loremflickr.com/1200/800/living-room?lock=35642",
-        "https://loremflickr.com/1200/800/kitchen?lock=13261",
-        "https://loremflickr.com/1200/800/bedroom?lock=69928",
-        "https://loremflickr.com/1200/800/bathroom?lock=47547",
-        "https://loremflickr.com/1200/800/apartment,hallway?lock=25166"
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=58023",
+      "imagen_principal": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-03-21"
     },
     {
@@ -622,13 +622,13 @@
       ],
       "descripcion": "Piso de 71 m² construidos (62 m² útiles) situado en Paseo de la Independencia, 54, en el distrito de Casablanca. La vivienda se distribuye en 3 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=4777",
-        "https://loremflickr.com/1200/800/living-room?lock=71920",
-        "https://loremflickr.com/1200/800/kitchen?lock=49539",
-        "https://loremflickr.com/1200/800/bedroom?lock=37634",
-        "https://loremflickr.com/1200/800/bathroom?lock=15253"
+        "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=4777",
+      "imagen_principal": "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-03-12"
     },
     {
@@ -684,12 +684,12 @@
       ],
       "descripcion": "Piso de 87 m² construidos (80 m² útiles) situado en Paseo de la Constitución, 6, en el distrito de San José. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=98539",
-        "https://loremflickr.com/1200/800/living-room?lock=76158",
-        "https://loremflickr.com/1200/800/kitchen?lock=53777",
-        "https://loremflickr.com/1200/800/bedroom?lock=31396"
+        "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=98539",
+      "imagen_principal": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-09-23"
     },
     {
@@ -745,13 +745,13 @@
       ],
       "descripcion": "Piso de 109 m² construidos (92 m² útiles) situado en Avenida de San José, 36, en el distrito de Torrero-La Paz. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=75908",
-        "https://loremflickr.com/1200/800/living-room?lock=41469",
-        "https://loremflickr.com/1200/800/kitchen?lock=63850",
-        "https://loremflickr.com/1200/800/bedroom?lock=43051",
-        "https://loremflickr.com/1200/800/bathroom?lock=65432"
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=75908",
+      "imagen_principal": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-09-18"
     },
     {
@@ -809,14 +809,14 @@
       ],
       "descripcion": "Dúplex de 171 m² construidos (145 m² útiles) situado en Calle de Miguel Servet, 4, en el distrito de San José. La vivienda se distribuye en 5 dormitorios y 1 baño, con orientación norte y una luminosidad excelente durante todo el día. Cuenta con una terraza de 16 m² perfecta para el día a día. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=55202",
-        "https://loremflickr.com/1200/800/living-room?lock=77583",
-        "https://loremflickr.com/1200/800/kitchen?lock=99964",
-        "https://loremflickr.com/1200/800/bedroom?lock=22345",
-        "https://loremflickr.com/1200/800/bathroom?lock=44726",
-        "https://loremflickr.com/1200/800/apartment,hallway?lock=67107"
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=55202",
+      "imagen_principal": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-09-03"
     },
     {
@@ -876,12 +876,12 @@
       ],
       "descripcion": "Dúplex de 173 m² construidos (158 m² útiles) situado en Avenida de Tenor Fleta, 1, en el distrito de La Almozara. La vivienda se distribuye en 5 dormitorios y 3 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 12 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=72838",
-        "https://loremflickr.com/1200/800/living-room?lock=95219",
-        "https://loremflickr.com/1200/800/kitchen?lock=17600",
-        "https://loremflickr.com/1200/800/bedroom?lock=60933"
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=72838",
+      "imagen_principal": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-08-24"
     },
     {
@@ -935,14 +935,14 @@
       ],
       "descripcion": "Estudio de 39 m² construidos (35 m² útiles) situado en Paseo de la Constitución, 129, en el distrito de Torrero-La Paz. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=29654",
-        "https://loremflickr.com/1200/800/living-room?lock=52035",
-        "https://loremflickr.com/1200/800/kitchen?lock=74416",
-        "https://loremflickr.com/1200/800/bedroom?lock=17749",
-        "https://loremflickr.com/1200/800/bathroom?lock=40130",
-        "https://loremflickr.com/1200/800/apartment,hallway?lock=62511"
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=29654",
+      "imagen_principal": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-08-20"
     },
     {
@@ -998,12 +998,12 @@
       ],
       "descripcion": "Piso de 85 m² construidos (76 m² útiles) situado en Avenida de Goya, 133, en el distrito de Torrero-La Paz. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación este y una luminosidad excelente durante todo el día. Cuenta con una terraza de 15 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=99665",
-        "https://loremflickr.com/1200/800/living-room?lock=66808",
-        "https://loremflickr.com/1200/800/kitchen?lock=44427",
-        "https://loremflickr.com/1200/800/bedroom?lock=32522"
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=99665",
+      "imagen_principal": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-08-18"
     },
     {
@@ -1057,13 +1057,13 @@
       ],
       "descripcion": "Piso de 69 m² construidos (63 m² útiles) situado en Calle de Miguel Servet, 165, en el distrito de Casablanca. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 9 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=60768",
-        "https://loremflickr.com/1200/800/living-room?lock=93625",
-        "https://loremflickr.com/1200/800/kitchen?lock=16006",
-        "https://loremflickr.com/1200/800/bedroom?lock=48863",
-        "https://loremflickr.com/1200/800/bathroom?lock=71244"
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=60768",
+      "imagen_principal": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-07-31"
     },
     {
@@ -1118,13 +1118,13 @@
       ],
       "descripcion": "Dúplex de 137 m² construidos (114 m² útiles) situado en Avenida de San José, 100, en el distrito de Romareda. La vivienda se distribuye en 2 dormitorios y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=19139",
-        "https://loremflickr.com/1200/800/living-room?lock=96758",
-        "https://loremflickr.com/1200/800/kitchen?lock=74377",
-        "https://loremflickr.com/1200/800/bedroom?lock=51996",
-        "https://loremflickr.com/1200/800/bathroom?lock=29615"
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=19139",
+      "imagen_principal": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-07-21"
     },
     {
@@ -1179,13 +1179,13 @@
       ],
       "descripcion": "Piso de 68 m² construidos (57 m² útiles) situado en Camino de las Torres, 151, en el distrito de Actur-Rey Fernando. La vivienda se distribuye en 4 dormitorios y 2 baños, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=87701",
-        "https://loremflickr.com/1200/800/living-room?lock=54844",
-        "https://loremflickr.com/1200/800/kitchen?lock=32463",
-        "https://loremflickr.com/1200/800/bedroom?lock=99606",
-        "https://loremflickr.com/1200/800/bathroom?lock=77225"
+        "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=87701",
+      "imagen_principal": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-07-08"
     },
     {
@@ -1243,12 +1243,12 @@
       ],
       "descripcion": "Estudio de 44 m² construidos (38 m² útiles) situado en Paseo de Pamplona, 122, en el distrito de Casco Histórico. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 17 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=50220",
-        "https://loremflickr.com/1200/800/living-room?lock=83077",
-        "https://loremflickr.com/1200/800/kitchen?lock=5458",
-        "https://loremflickr.com/1200/800/bedroom?lock=17363"
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=50220",
+      "imagen_principal": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-06-15"
     },
     {
@@ -1305,14 +1305,14 @@
       ],
       "descripcion": "Piso de 104 m² construidos (95 m² útiles) situado en Calle de Miguel Servet, 166, en el distrito de San José. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=40004",
-        "https://loremflickr.com/1200/800/living-room?lock=72861",
-        "https://loremflickr.com/1200/800/kitchen?lock=95242",
-        "https://loremflickr.com/1200/800/bedroom?lock=7147",
-        "https://loremflickr.com/1200/800/bathroom?lock=29528",
-        "https://loremflickr.com/1200/800/apartment,hallway?lock=62385"
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=40004",
+      "imagen_principal": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-05-19"
     },
     {
@@ -1368,12 +1368,12 @@
       ],
       "descripcion": "Loft de 90 m² construidos (80 m² útiles) situado en Avenida de San José, 36, en el distrito de El Rabal (Arrabal). La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación sureste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=2096",
-        "https://loremflickr.com/1200/800/living-room?lock=34953",
-        "https://loremflickr.com/1200/800/kitchen?lock=57334",
-        "https://loremflickr.com/1200/800/bedroom?lock=90191"
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=2096",
+      "imagen_principal": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-05-15"
     },
     {
@@ -1428,13 +1428,13 @@
       ],
       "descripcion": "Loft de 60 m² construidos (50 m² útiles) situado en Avenida de Valencia, 2, en el distrito de Casco Histórico. La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación suroeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=30465",
-        "https://loremflickr.com/1200/800/living-room?lock=97608",
-        "https://loremflickr.com/1200/800/kitchen?lock=75227",
-        "https://loremflickr.com/1200/800/bedroom?lock=63322",
-        "https://loremflickr.com/1200/800/bathroom?lock=40941"
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=30465",
+      "imagen_principal": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-05-09"
     },
     {
@@ -1491,13 +1491,13 @@
       ],
       "descripcion": "Piso de 102 m² construidos (87 m² útiles) situado en Calle de Bretón, 20, en el distrito de Casablanca. La vivienda se distribuye en 4 dormitorios y 3 baños, con orientación sur y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=50952",
-        "https://loremflickr.com/1200/800/living-room?lock=83809",
-        "https://loremflickr.com/1200/800/kitchen?lock=6190",
-        "https://loremflickr.com/1200/800/bedroom?lock=39047",
-        "https://loremflickr.com/1200/800/bathroom?lock=61428"
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=50952",
+      "imagen_principal": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-05-06"
     },
     {
@@ -1553,13 +1553,13 @@
       ],
       "descripcion": "Ático de 77 m² construidos (63 m² útiles) situado en Calle de León XIII, 56, en el distrito de Casco Histórico. La vivienda se distribuye en 2 dormitorios y 2 baños, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 35 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=84880",
-        "https://loremflickr.com/1200/800/living-room?lock=17737",
-        "https://loremflickr.com/1200/800/kitchen?lock=40118",
-        "https://loremflickr.com/1200/800/bedroom?lock=72975",
-        "https://loremflickr.com/1200/800/bathroom?lock=95356"
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=84880",
+      "imagen_principal": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-03-24"
     },
     {
@@ -1618,13 +1618,13 @@
       ],
       "descripcion": "Estudio de 43 m² construidos (40 m² útiles) situado en Avenida de Valencia, 179, en el distrito de Torrero-La Paz. La vivienda se distribuye en un ambiente diáfano y 1 baño, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Se entrega con trastero. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=22651",
-        "https://loremflickr.com/1200/800/living-room?lock=270",
-        "https://loremflickr.com/1200/800/kitchen?lock=77889",
-        "https://loremflickr.com/1200/800/bedroom?lock=55508",
-        "https://loremflickr.com/1200/800/bathroom?lock=33127"
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=22651",
+      "imagen_principal": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-02-22"
     },
     {
@@ -1683,13 +1683,13 @@
       ],
       "descripcion": "Dúplex de 146 m² construidos (123 m² útiles) situado en Avenida de Goya, 66, en el distrito de Universidad. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. Cuenta con una terraza de 9 m² perfecta para el día a día. Se entrega con trastero. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=86747",
-        "https://loremflickr.com/1200/800/living-room?lock=64366",
-        "https://loremflickr.com/1200/800/kitchen?lock=41985",
-        "https://loremflickr.com/1200/800/bedroom?lock=19604",
-        "https://loremflickr.com/1200/800/bathroom?lock=97223"
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=86747",
+      "imagen_principal": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-02-12"
     },
     {
@@ -1746,12 +1746,12 @@
       ],
       "descripcion": "Dúplex de 141 m² construidos (118 m² útiles) situado en Avenida de Cataluña, 21, en el distrito de Romareda. La vivienda se distribuye en 5 dormitorios y 2 baños, con orientación este y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=22119",
-        "https://loremflickr.com/1200/800/living-room?lock=99738",
-        "https://loremflickr.com/1200/800/kitchen?lock=77357",
-        "https://loremflickr.com/1200/800/bedroom?lock=34024"
+        "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=22119",
+      "imagen_principal": "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-01-22"
     },
     {
@@ -1807,14 +1807,14 @@
       ],
       "descripcion": "Piso de 57 m² construidos (51 m² útiles) situado en Avenida de César Augusto, 74, en el distrito de Casablanca. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación sureste y una luminosidad excelente durante todo el día. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=40149",
-        "https://loremflickr.com/1200/800/living-room?lock=7292",
-        "https://loremflickr.com/1200/800/kitchen?lock=84911",
-        "https://loremflickr.com/1200/800/bedroom?lock=52054",
-        "https://loremflickr.com/1200/800/bathroom?lock=29673",
-        "https://loremflickr.com/1200/800/apartment,hallway?lock=96816"
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=40149",
+      "imagen_principal": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-01-07"
     },
     {
@@ -1870,12 +1870,12 @@
       ],
       "descripcion": "Piso de 109 m² construidos (91 m² útiles) situado en Avenida de Goya, 130, en el distrito de Las Fuentes. La vivienda se distribuye en 4 dormitorios y 1 baño, con orientación oeste y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 11 m² perfecta para el día a día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=41413",
-        "https://loremflickr.com/1200/800/living-room?lock=8556",
-        "https://loremflickr.com/1200/800/kitchen?lock=86175",
-        "https://loremflickr.com/1200/800/bedroom?lock=53318"
+        "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=41413",
+      "imagen_principal": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-01-06"
     },
     {
@@ -1931,13 +1931,13 @@
       ],
       "descripcion": "Casa de 157 m² construidos (142 m² útiles) situado en Calle de Delicias, 84, en el distrito de San José. La vivienda se distribuye en 3 dormitorios y 2 baños, con orientación oeste y una luminosidad excelente durante todo el día. Contrato de larga duración. Se requieren nómina y aval o seguro de impago. Gastos de agencia según normativa vigente.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=45953",
-        "https://loremflickr.com/1200/800/living-room?lock=13096",
-        "https://loremflickr.com/1200/800/kitchen?lock=90715",
-        "https://loremflickr.com/1200/800/bedroom?lock=78810",
-        "https://loremflickr.com/1200/800/bathroom?lock=56429"
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=45953",
+      "imagen_principal": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2026-01-01"
     },
     {
@@ -1994,13 +1994,13 @@
       ],
       "descripcion": "Piso de 54 m² construidos (46 m² útiles) situado en Calle de Bretón, 39, en el distrito de Universidad. La vivienda se distribuye en 1 dormitorios y 1 baño, con orientación norte y una luminosidad excelente durante todo el día. El edificio dispone de ascensor. Cuenta con una terraza de 10 m² perfecta para el día a día. Incluye plaza de garaje en el mismo edificio. Zona muy bien comunicada, con comercio de proximidad, colegios y transporte público a pocos minutos. Posibilidad de financiación; consúltanos las condiciones.",
       "imagenes": [
-        "https://loremflickr.com/1200/800/apartment,interior?lock=78655",
-        "https://loremflickr.com/1200/800/living-room?lock=56274",
-        "https://loremflickr.com/1200/800/kitchen?lock=33893",
-        "https://loremflickr.com/1200/800/bedroom?lock=90560",
-        "https://loremflickr.com/1200/800/bathroom?lock=68179"
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&h=800&fit=crop&q=70",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=800&fit=crop&q=70"
       ],
-      "imagen_principal": "https://loremflickr.com/1200/800/apartment,interior?lock=78655",
+      "imagen_principal": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&h=800&fit=crop&q=70",
       "fecha_publicacion": "2025-12-31"
     }
   ]

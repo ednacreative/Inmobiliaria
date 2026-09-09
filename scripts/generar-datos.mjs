@@ -4,11 +4,10 @@
  * Uso:  node scripts/generar-datos.mjs
  * Salida: data/propiedades.json
  *
- * Los datos son inventados. Las imagenes son placeholders de interiores de
- * vivienda servidos por loremflickr.com (fotos reales de Flickr por palabra
- * clave, deterministas via ?lock=). Si loremflickr falla, la web cae de forma
- * automatica a picsum.photos (ver el manejador global en js/layout.js).
- * Sustituye este fichero (o directamente el JSON) por fotos reales cuando toque.
+ * Los datos son inventados. Las imagenes son fotos de interiores de vivienda
+ * (placeholders de Unsplash, pool FOTOS_INTERIOR mas abajo). Si alguna no
+ * carga, la web cae de forma automatica a picsum.photos (manejador global en
+ * js/layout.js). Sustituye el pool -o directamente el JSON- por fotos reales.
  */
 
 import { writeFileSync, mkdirSync } from "node:fs";
@@ -171,16 +170,31 @@ function distribucionDe(p) {
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 /* ------------------------------------------------------------------ *
- * Imágenes de vivienda (placeholders temáticos de interiores)
+ * Imágenes de vivienda (fotos de interiores, placeholders de Unsplash)
  * ------------------------------------------------------------------ */
-// Cada posición de la galería muestra una estancia distinta.
-const ESTANCIAS_FOTO = [
-  "apartment,interior",
-  "living-room",
-  "kitchen",
-  "bedroom",
-  "bathroom",
-  "apartment,hallway",
+// Pool de fotos de interiores de vivienda (salón, dormitorio, cocina, baño).
+// IDs de Unsplash verificados. Se sirven por su CDN (images.unsplash.com).
+// Sustituye este pool por las fotos reales de cada inmueble cuando toque.
+const FOTOS_INTERIOR = [
+  "1522708323590-d24dbb6b0267",
+  "1502672260266-1c1ef2d93688",
+  "1493809842364-78817add7ffb",
+  "1560448204-e02f11c3d0e2",
+  "1560185007-cde436f6a4d0",
+  "1560185893-a55cbc8c57e8",
+  "1522771739844-6a9f6d5f14af",
+  "1505693416388-ac5ce068fe85",
+  "1586023492125-27b2c045efd7",
+  "1484154218962-a197022b5858",
+  "1556909212-d5b604d0c90d",
+  "1556911220-bff31c812dba",
+  "1600566753086-00f18fb6b3ea",
+  "1600607687939-ce8a6c25118c",
+  "1600210492486-724fe5c67fb0",
+  "1584622650111-993a426fbf0a",
+  "1617103996702-96ff29b1c467",
+  "1598928506311-c55ded91a20c",
+  "1583847268964-b28dc8f51f92",
 ];
 
 function hashCadena(s) {
@@ -192,10 +206,21 @@ function hashCadena(s) {
   return h >>> 0;
 }
 
-function imagenPiso(id, n) {
-  const tag = ESTANCIAS_FOTO[(n - 1) % ESTANCIAS_FOTO.length];
-  const lock = hashCadena(id + "-" + n) % 100000;
-  return `https://loremflickr.com/1200/800/${tag}?lock=${lock}`;
+function urlFoto(unsplashId) {
+  return `https://images.unsplash.com/photo-${unsplashId}?w=1200&h=800&fit=crop&q=70`;
+}
+
+// Devuelve `cuantas` fotos distintas para una vivienda, deterministas por id.
+function fotosDe(id, cuantas) {
+  const pool = FOTOS_INTERIOR.slice();
+  let seed = hashCadena(id);
+  // Fisher–Yates con PRNG sembrado en el id.
+  for (let i = pool.length - 1; i > 0; i--) {
+    seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+    const j = seed % (i + 1);
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, cuantas).map(urlFoto);
 }
 
 /* ------------------------------------------------------------------ *
@@ -244,7 +269,7 @@ for (let i = 1; i <= TOTAL; i++) {
   const extras = [...EXTRAS_POOL].sort(() => rand() - 0.5).slice(0, numExtras).sort();
 
   const numImgs = intBetween(4, 6);
-  const imagenes = Array.from({ length: numImgs }, (_, n) => imagenPiso(id, n + 1));
+  const imagenes = fotosDe(id, numImgs);
 
   const p = {
     id,

@@ -39,7 +39,7 @@
       '<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>' +
       '<nav class="nav" id="nav-principal">' +
       enlaces +
-      '<a class="btn btn--primario nav__cta" href="contacto.html">Publica tu inmueble</a>' +
+      '<a class="btn btn--primario nav__cta" href="publica.html">Publica tu inmueble</a>' +
       "</nav>" +
       "</div>"
     );
@@ -65,8 +65,8 @@
       "<div><h4>Agencia</h4><ul>" +
       '<li><a href="nosotros.html">Sobre nosotros</a></li>' +
       '<li><a href="informacion.html">Guías y trámites</a></li>' +
+      '<li><a href="publica.html">Publica tu inmueble</a></li>' +
       '<li><a href="contacto.html">Contacto</a></li>' +
-      '<li><a href="contacto.html">Trabaja con nosotros</a></li>' +
       "</ul></div>" +
       "<div><h4>Contacto</h4><ul>" +
       '<li><a href="tel:+34976000000">976 000 000</a></li>' +
@@ -87,8 +87,8 @@
     );
   }
 
-  // Si una foto de vivienda (loremflickr) no carga, se sustituye por una de
-  // picsum.photos para que la demo nunca muestre imágenes rotas.
+  // Si una foto de vivienda (Unsplash u otra) no carga, se sustituye por una
+  // de picsum.photos para que la demo nunca muestre imágenes rotas.
   document.addEventListener(
     "error",
     function (e) {
@@ -97,12 +97,14 @@
         img &&
         img.tagName === "IMG" &&
         !img.dataset.fallback &&
-        /loremflickr\.com/.test(img.src)
+        !/picsum\.photos/.test(img.src) &&
+        /^https?:/.test(img.src)
       ) {
         img.dataset.fallback = "1";
-        var m = img.src.match(/lock=(\d+)/);
-        var semilla = m ? m[1] : Math.abs(hashTxt(img.src));
-        img.src = "https://picsum.photos/seed/piso-" + semilla + "/1200/800";
+        img.src =
+          "https://picsum.photos/seed/piso-" +
+          Math.abs(hashTxt(img.src)) +
+          "/1200/800";
       }
     },
     true // fase de captura: el evento "error" de <img> no propaga

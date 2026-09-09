@@ -11,22 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    /* Visor de imágenes a pantalla completa */
-    .visor {
-      position: fixed;
-      inset: 0;
-      background: rgba(8, 16, 24, 0.92);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-      padding: 2rem;
-      cursor: zoom-out;
-    }
-    .visor.abierto { display: flex; }
-    .visor img { max-width: 92vw; max-height: 90vh; border-radius: 10px; }
-  </style>
 </head>
 <body>
   <header data-cabecera></header>
@@ -37,13 +21,20 @@
     </article>
   </main>
 
-  <div class="visor" id="visor"><img src="" alt="Imagen ampliada de la vivienda"></div>
+  <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Galería de fotos">
+    <button type="button" class="visor__cerrar" aria-label="Cerrar galería">&times;</button>
+    <button type="button" class="visor__nav visor__prev" aria-label="Foto anterior">&#8249;</button>
+    <img class="visor__img" src="" alt="Imagen ampliada de la vivienda">
+    <button type="button" class="visor__nav visor__next" aria-label="Foto siguiente">&#8250;</button>
+    <span class="visor__contador" aria-hidden="true"></span>
+  </div>
 
   <footer data-pie></footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="data/propiedades.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/forms.js"></script>
   <script src="js/layout.js"></script>
   <script src="js/propiedad.js"></script>
 </body>

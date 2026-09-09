@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publica tu inmueble · Inmobiliaria Sanz</title>
+  <meta name="description" content="¿Quieres vender o alquilar tu vivienda con Inmobiliaria Sanz? Rellena las características de tu inmueble y la revisamos para publicarla.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-cabecera></header>
+
+  <div class="encabezado-pagina">
+    <div class="contenedor">
+      <h1>Publica tu inmueble</h1>
+      <p>Rellena los datos de tu vivienda para venderla o alquilarla con nosotros. Es una <strong>solicitud</strong>: revisamos cada inmueble y te contactamos para confirmar la publicación. No se publica automáticamente.</p>
+    </div>
+  </div>
+
+  <main class="seccion">
+    <div class="contenedor" style="max-width:860px">
+      <form id="form-publica" class="form-grid">
+
+        <fieldset>
+          <legend>Operación</legend>
+        </fieldset>
+        <div class="form-campo">
+          <label for="p-operacion">¿Qué quieres hacer? *</label>
+          <select id="p-operacion" name="operacion" required>
+            <option value="venta">Vender</option>
+            <option value="alquiler">Alquilar</option>
+          </select>
+        </div>
+        <div class="form-campo">
+          <label for="p-tipo">Tipo de inmueble *</label>
+          <select id="p-tipo" name="tipo" required>
+            <option value="piso">Piso</option>
+            <option value="ático">Ático</option>
+            <option value="dúplex">Dúplex</option>
+            <option value="casa">Casa</option>
+            <option value="estudio">Estudio</option>
+            <option value="loft">Loft</option>
+            <option value="local">Local</option>
+          </select>
+        </div>
+        <div class="form-campo">
+          <label for="p-precio">Precio (€ en venta · €/mes en alquiler) *</label>
+          <input id="p-precio" name="precio" type="number" min="0" step="any" required>
+        </div>
+        <div class="form-campo">
+          <label for="p-estado">Estado de conservación</label>
+          <select id="p-estado" name="estado_conservacion">
+            <option value="">Sin especificar</option>
+            <option>A estrenar</option>
+            <option>Reformado</option>
+            <option>Buen estado</option>
+            <option>Para actualizar</option>
+            <option>A reformar</option>
+          </select>
+        </div>
+
+        <fieldset><legend>Ubicación</legend></fieldset>
+        <div class="form-campo ancho-total">
+          <label for="p-direccion">Dirección (calle y número) *</label>
+          <input id="p-direccion" name="direccion" required>
+        </div>
+        <div class="form-campo">
+          <label for="p-barrio">Barrio / zona *</label>
+          <input id="p-barrio" name="barrio" list="barrios-zgz" required>
+          <datalist id="barrios-zgz">
+            <option>Centro</option><option>Casco Histórico</option><option>Universidad</option>
+            <option>Delicias</option><option>San José</option><option>Las Fuentes</option>
+            <option>La Almozara</option><option>Actur-Rey Fernando</option><option>El Rabal (Arrabal)</option>
+            <option>Torrero-La Paz</option><option>Casablanca</option><option>Miralbueno</option>
+            <option>Oliver-Valdefierro</option><option>Santa Isabel</option><option>Parque Goya</option>
+            <option>Romareda</option>
+          </datalist>
+        </div>
+        <div class="form-campo">
+          <label for="p-ciudad">Ciudad</label>
+          <input id="p-ciudad" name="ciudad" value="Zaragoza">
+        </div>
+        <div class="form-campo">
+          <label for="p-cp">Código postal</label>
+          <input id="p-cp" name="cp" inputmode="numeric" pattern="[0-9]{5}" placeholder="50004">
+        </div>
+
+        <fieldset><legend>Características</legend></fieldset>
+        <div class="form-campo">
+          <label for="p-m2c">Superficie construida (m²) *</label>
+          <input id="p-m2c" name="m2_construidos" type="number" min="0" step="any" required>
+        </div>
+        <div class="form-campo">
+          <label for="p-m2u">Superficie útil (m²)</label>
+          <input id="p-m2u" name="m2_utiles" type="number" min="0" step="any">
+        </div>
+        <div class="form-campo">
+          <label for="p-hab">Habitaciones *</label>
+          <input id="p-hab" name="habitaciones" type="number" min="0" max="20" required>
+        </div>
+        <div class="form-campo">
+          <label for="p-banos">Baños *</label>
+          <input id="p-banos" name="banos" type="number" min="0" max="10" required>
+        </div>
+        <div class="form-campo">
+          <label for="p-planta">Planta</label>
+          <input id="p-planta" name="planta" placeholder="Ej.: 3ª, Bajo, Unifamiliar">
+        </div>
+        <div class="form-campo">
+          <label for="p-anio">Año de construcción</label>
+          <input id="p-anio" name="ano_construccion" type="number" min="1800" max="2030">
+        </div>
+        <div class="form-campo">
+          <label for="p-cee">Certificado energético</label>
+          <select id="p-cee" name="certificado_energetico">
+            <option value="">Sin especificar / en trámite</option>
+            <option>A</option><option>B</option><option>C</option><option>D</option>
+            <option>E</option><option>F</option><option>G</option>
+          </select>
+        </div>
+        <div class="form-campo">
+          <label for="p-orient">Orientación</label>
+          <select id="p-orient" name="orientacion">
+            <option value="">Sin especificar</option>
+            <option>Norte</option><option>Sur</option><option>Este</option><option>Oeste</option>
+            <option>Noreste</option><option>Noroeste</option><option>Sureste</option><option>Suroeste</option>
+          </select>
+        </div>
+        <div class="form-campo">
+          <label for="p-comunidad">Gastos de comunidad (€/mes)</label>
+          <input id="p-comunidad" name="gastos_comunidad_mes" type="number" min="0" step="any">
+        </div>
+        <div class="form-campo">
+          <label for="p-terraza-m2">Superficie de terraza (m²)</label>
+          <input id="p-terraza-m2" name="m2_terraza" type="number" min="0" step="any">
+        </div>
+
+        <div class="form-check-fila">
+          <label><input type="checkbox" name="ascensor" value="Sí"> Ascensor</label>
+          <label><input type="checkbox" name="garaje" value="Sí"> Garaje</label>
+          <label><input type="checkbox" name="trastero" value="Sí"> Trastero</label>
+          <label><input type="checkbox" name="terraza" value="Sí"> Terraza</label>
+        </div>
+
+        <fieldset><legend>Descripción y fotos</legend></fieldset>
+        <div class="form-campo ancho-total">
+          <label for="p-desc">Descripción del inmueble *</label>
+          <textarea id="p-desc" name="descripcion" required placeholder="Cuéntanos cómo es la vivienda, la distribución, la zona, lo que la hace especial…"></textarea>
+        </div>
+        <div class="form-campo ancho-total">
+          <label for="p-extras">Equipamiento y extras (uno por línea)</label>
+          <textarea id="p-extras" name="extras" placeholder="Aire acondicionado&#10;Cocina equipada&#10;Armarios empotrados"></textarea>
+        </div>
+        <div class="form-campo ancho-total">
+          <label for="p-fotos">Enlace a las fotos (Drive, Dropbox, WeTransfer…)</label>
+          <input id="p-fotos" name="fotos_enlace" type="url" placeholder="https://…">
+        </div>
+
+        <fieldset><legend>Tus datos de contacto</legend></fieldset>
+        <div class="form-campo">
+          <label for="p-nombre">Nombre y apellidos *</label>
+          <input id="p-nombre" name="contacto_nombre" required>
+        </div>
+        <div class="form-campo">
+          <label for="p-tel">Teléfono *</label>
+          <input id="p-tel" name="contacto_telefono" type="tel" required>
+        </div>
+        <div class="form-campo ancho-total">
+          <label for="p-email">Email *</label>
+          <input id="p-email" name="contacto_email" type="email" required>
+        </div>
+
+        <label class="ancho-total" style="display:flex;gap:.5rem;font-size:.85rem;color:var(--gris-700);margin:.4rem 0 1rem">
+          <input type="checkbox" required> He leído y acepto la política de privacidad y que Inmobiliaria Sanz me contacte sobre esta solicitud.
+        </label>
+
+        <button class="btn btn--primario btn--bloque ancho-total" type="submit">Enviar inmueble para revisión</button>
+      </form>
+
+      <div id="publica-ok" class="aviso-form oculto"></div>
+      <div id="publica-error" class="aviso-form aviso-error oculto"></div>
+
+      <p class="texto-apoyo" style="font-size:.82rem;margin-top:1.5rem">
+        ¿Prefieres que te llamemos? Escríbenos a
+        <a href="mailto:hola@inmobiliariasanz.es">hola@inmobiliariasanz.es</a> o al 976 000 000.
+      </p>
+    </div>
+  </main>
+
+  <footer data-pie></footer>
+
+  <script src="js/forms.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/publica.js"></script>
+</body>
+</html>

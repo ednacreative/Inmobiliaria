@@ -128,6 +128,9 @@
         '<div class="galeria">' +
         galeria +
         "</div>" +
+        '<button type="button" id="ver-fotos" class="btn btn--linea" style="margin:-0.8rem 0 2rem">Ver las ' +
+        p.imagenes.length +
+        " fotos</button>" +
         '<div class="ficha__cols">' +
         "<div>" +
         "<h2>Características</h2>" +
@@ -155,7 +158,7 @@
         "</div>";
 
       iniciarMapa(p);
-      activarGaleria();
+      activarGaleria(p);
       activarFormulario(p);
     }
 
@@ -204,19 +207,77 @@
       }).addTo(mapa);
     }
 
-    function activarGaleria() {
-      var imgs = raiz.querySelectorAll(".galeria img");
+    function activarGaleria(p) {
       var visor = document.getElementById("visor");
       if (!visor) return;
-      var visorImg = visor.querySelector("img");
-      imgs.forEach(function (img) {
+      var imgEl = visor.querySelector(".visor__img");
+      var contador = visor.querySelector(".visor__contador");
+      var btnPrev = visor.querySelector(".visor__prev");
+      var btnNext = visor.querySelector(".visor__next");
+      var btnCerrar = visor.querySelector(".visor__cerrar");
+      var fotos = p.imagenes || [];
+      var idx = 0;
+
+      function mostrar(i) {
+        if (!fotos.length) return;
+        idx = (i + fotos.length) % fotos.length;
+        imgEl.src = fotos[idx];
+        imgEl.alt = p.titulo + " — foto " + (idx + 1) + " de " + fotos.length;
+        if (contador) contador.textContent = idx + 1 + " / " + fotos.length;
+        var unaSola = fotos.length < 2;
+        btnPrev.hidden = unaSola;
+        btnNext.hidden = unaSola;
+      }
+
+      function abrir(i) {
+        mostrar(i);
+        visor.classList.add("abierto");
+        document.body.style.overflow = "hidden";
+      }
+
+      function cerrar() {
+        visor.classList.remove("abierto");
+        document.body.style.overflow = "";
+      }
+
+      raiz.querySelectorAll(".galeria img").forEach(function (img, i) {
+        img.style.cursor = "zoom-in";
         img.addEventListener("click", function () {
-          visorImg.src = img.getAttribute("data-full");
-          visor.classList.add("abierto");
+          abrir(i);
         });
       });
-      visor.addEventListener("click", function () {
-        visor.classList.remove("abierto");
+
+      var verFotos = document.getElementById("ver-fotos");
+      if (verFotos) {
+        verFotos.addEventListener("click", function () {
+          abrir(0);
+        });
+      }
+
+      btnPrev.addEventListener("click", function (e) {
+        e.stopPropagation();
+        mostrar(idx - 1);
+      });
+      btnNext.addEventListener("click", function (e) {
+        e.stopPropagation();
+        mostrar(idx + 1);
+      });
+      btnCerrar.addEventListener("click", function (e) {
+        e.stopPropagation();
+        cerrar();
+      });
+      // Clic sobre la imagen = siguiente foto; clic en el fondo = cerrar.
+      imgEl.addEventListener("click", function (e) {
+        e.stopPropagation();
+        mostrar(idx + 1);
+      });
+      visor.addEventListener("click", cerrar);
+
+      document.addEventListener("keydown", function (e) {
+        if (!visor.classList.contains("abierto")) return;
+        if (e.key === "Escape") cerrar();
+        else if (e.key === "ArrowLeft") mostrar(idx - 1);
+        else if (e.key === "ArrowRight") mostrar(idx + 1);
       });
     }
 
@@ -225,12 +286,62 @@
       if (!f) return;
       f.addEventListener("submit", function (e) {
         e.preventDefault();
-        f.innerHTML =
-          '<div class="aviso-form"><strong>¡Solicitud enviada!</strong><br>Gracias, ' +
-          "te llamaremos en breve para organizar la visita a la ref. " +
-          p.referencia +
-          ".</div>";
+        var btn = f.querySelector('button[type="submit"]');
+        if (btn) {
+          btn.disabled = true;
+          btn.textContent = "Enviando…";
+        }
+        var datos = {
+          Nombre: f.nombre.value,
+          Teléfono: f.telefono.value,
+          Email: f.email.value,
+          Mensaje: f.mensaje.value,
+          Referencia: p.referencia,
+          Inmueble: p.titulo,
+          Enlace: location.href,
+        };
+        var restaura = function () {
+          if (btn) {
+            btn.disabled = false;
+            btn.textContent = "Solicitar visita";
+          }
+        };
+        if (!window.InmoForms) {
+          f.innerHTML = avisoOk(p);
+          return;
+        }
+        window.InmoForms.enviar(datos, {
+          asunto: "Solicitud de visita — ref. " + p.referencia,
+        })
+          .then(function () {
+            f.innerHTML = avisoOk(p);
+          })
+          .catch(function (err) {
+            restaura();
+            mostrarError(f, err);
+          });
       });
+    }
+
+    function avisoOk(p) {
+      return (
+        '<div class="aviso-form"><strong>¡Solicitud enviada!</strong><br>Gracias, ' +
+        "te contactaremos en breve para organizar la visita a la ref. " +
+        p.referencia +
+        ".</div>"
+      );
+    }
+
+    function mostrarError(f, err) {
+      var prev = f.querySelector(".aviso-error");
+      if (prev) prev.remove();
+      var div = document.createElement("div");
+      div.className = "aviso-form aviso-error";
+      div.innerHTML =
+        "<strong>No se ha podido enviar.</strong><br>" +
+        (err && err.message ? err.message + "<br>" : "") +
+        'Escríbenos a <a href="mailto:hola@inmobiliariasanz.es">hola@inmobiliariasanz.es</a> o llámanos al 976 000 000.';
+      f.appendChild(div);
     }
 
     function pintarSimilares(p, lista) {
