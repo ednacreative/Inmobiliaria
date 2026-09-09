@@ -206,8 +206,12 @@ p {
 .cabecera__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: var(--header-h);
+}
+
+/* El logo empuja el resto (menú + icono de cuenta) hacia la derecha */
+.cabecera__logo {
+  margin-right: auto;
 }
 
 .cabecera__logo img {
@@ -219,6 +223,10 @@ p {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+
+.perfil {
+  margin-left: 1.4rem;
 }
 
 .nav a {
@@ -1590,7 +1598,12 @@ p {
 
 @media (max-width: 940px) {
   .perfil {
-    order: -1;
+    order: 1;
+    margin-left: 0;
+  }
+  .nav-toggle {
+    order: 2;
+    margin-left: 0.5rem;
   }
   .perfil__menu {
     position: fixed;
